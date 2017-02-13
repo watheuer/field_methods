@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+
+% packages
+\usepackage{tipa}
+\usepackage{enumerate}
+\usepackage{linguex}
+\usepackage{gb4e}
+\noautomath
+\usepackage{xstring}
+
+% define \phon for phonetic examples
+\newcommand{\phon}[1]{$[$\textipa{#1}$]$}
+\newcommand{\orth}[1]{\StrSubstitute{#1}{I}{\'{i}}[\x]\StrSubstitute{\x}{E}{\'{e}}[\x]\StrSubstitute{\x}{N}{\~{n}}[\x]\x}
+
+% margins and spacing
+\usepackage[letterpaper, margin=1in]{geometry}
+
+\iffalse
+HW 3 Commands
+
+First, please review comments on your last assignment so you don't keep doing the same thing. There is an example paper under Course Documents called Lee-Final that is a good example of style.
+
+Write up a description of commands (positive to male, female, plural group; negative to male, female, plural group; hortatives ("let's" expressions) in positive and negative). You might want to do this in terms of the infinitive.
+
+It's possible that some of the affixes are person markers: do your best for now and you can edit this section as you learn more.
+
+You'll want to say something about palatalization in commands to women. A central question is whether this process is a general phonological rule in the language or specific to commands. Do your best to describe all the consonants that palatalization applies to.
+
+From now on you'll want to start using three-line format as much as possible:
+
+(1)  K'um-u!
+     stand-IMP.PL
+     'Stand! (to pl.)'
+
+You might make some wrong guesses about the meanings of affixes, but it will get you started.
+\fi
+
+
+\begin{document}
+
+\begin{center}
+{\Large Homework 3} \\
+{\large Will Theuer}
+\end{center}
+
+
+\section{Orthography}
+
+
+\section{Commands}
+
+\begin{tabular}{l|llllllllll}
+  verb       & \orth{meblat} & \orth{met'et'at}  & \orth{mambib}   & \orth{mawrat} & \orth{merot'}    & \orth{mek'emit'}    & \orth{mets'af}   & \orth{mehEd} \\ \hline
+  F & \orth{bI}     & \orth{t'ech'I}    & \orth{ambibI}   & \orth{awrI}   & \orth{ruch'I}    & \orth{k'uch'bE}     & \orth{ts'afI}    & \orth{hIjI} \\
+  M & \orth{bila}   & \orth{t'et'a}     & \orth{ambib}    & \orth{awr}    & \orth{rut'}      & \orth{k'uch'bel}    & \orth{ts'af}     & \orth{hId} \\
+  P & \orth{bilu}   & \orth{t'et'u}     & \orth{ambibu}   & \orth{awru}   & \orth{rut'u}     & \orth{k'uch'belu}   & \orth{ts'afu}    & \orth{hIdu} \\
+  H & \orth{inibla} & \orth{init'eta}   & \orth{inambib}  & \orth{inawra} & \orth{inirut'}   & \orth{inik'emit'}   & \orth{inits'af}  & \orth{inihId} \\
+  NF & \orth{atibI}  & \orth{atit'ech'I} & \orth{atambibI} & \orth{atawrI} & \orth{atiruch'I} & \orth{atik'emich'I} & \orth{atits'afI} & \orth{atihIjI} \\
+  NM & \orth{atibla} & \orth{atit'et'a}  & \orth{atambib}  & \orth{atawr}  & \orth{atirut'}   & \orth{atik'emit'}   & \orth{atits'af}  & \orth{atihId} \\
+  NP & \orth{atiblu} & \orth{atit'et'u}  & \orth{atambibu} & \orth{atawru} & \orth{atirut'u}  & \orth{atik'emit'u}  & \orth{atits'afu} & \orth{atihIdu} \\
+  NH & \orth{anibla} & \orth{anit'et'a}  & \orth{anambib}  & \orth{anawra} & \orth{anirut'}   & \orth{anik'emit'}   & \orth{anits'af}  & \orth{anihId} \\
+\end{tabular}
+
+
+
+\end{document}
+
+% full table of command data
+\begin{tabular}{l|llllllllll}
+  verb       & \orth{meblat} & \orth{metENat} & \orth{met'et'at}  & \orth{mambib}   & \orth{mawrat} & \orth{merot'}    & \orth{mek'om}   & \orth{mek'emit'}    & \orth{mets'af}   & \orth{mehEd} \\ \hline
+  you (f)    & \orth{bI}     & \orth{tENI}    & \orth{t'ech'I}    & \orth{ambibI}   & \orth{awrI}   & \orth{ruch'I}    & \orth{k'umI}    & \orth{k'uch'bE}     & \orth{ts'afI}    & \orth{hIjI} \\
+  you (m)    & \orth{bila}   & \orth{tENa}    & \orth{t'et'a}     & \orth{ambib}    & \orth{awr}    & \orth{rut'}      & \orth{k'um}     & \orth{k'uch'bel}    & \orth{ts'af}     & \orth{hId} \\
+  you (pl)   & \orth{bilu}   & \orth{tENu}    & \orth{t'et'u}     & \orth{ambibu}   & \orth{awru}   & \orth{rut'u}     & \orth{k'umu}    & \orth{k'uch'belu}   & \orth{ts'afu}    & \orth{hIdu} \\
+  let's      & \orth{inibla} & \orth{initENa} & \orth{init'eta}   & \orth{inambib}  & \orth{inawra} & \orth{inirut'}   & \orth{inik'um}  & \orth{inik'emit'}   & \orth{inits'af}  & \orth{inihId} \\
+  don't (f)  & \orth{atibI}  & \orth{atitENI} & \orth{atit'ech'I} & \orth{atambibI} & \orth{atawrI} & \orth{atiruch'I} & \orth{atik'umI} & \orth{atik'emich'I} & \orth{atits'afI} & \orth{atihIjI} \\
+  don't (m)  & \orth{atibla} & \orth{atitENa} & \orth{atit'et'a}  & \orth{atambib}  & \orth{atawr}  & \orth{atirut'}   & \orth{atik'um}  & \orth{atik'emit'}   & \orth{atits'af}  & \orth{atihId} \\
+  don't (pl) & \orth{atiblu} & \orth{atitENu} & \orth{atit'et'u}  & \orth{atambibu} & \orth{atawru} & \orth{atirut'u}  & \orth{atik'umu} & \orth{atik'emit'u}  & \orth{atits'afu} & \orth{atihIdu} \\
+  let's not  & \orth{anibla} & \orth{anitENa} & \orth{anit'et'a}  & \orth{anambib}  & \orth{anawra} & \orth{anirut'}   & \orth{anik'um}  & \orth{anik'emit'}   & \orth{anits'af}  & \orth{anihId} \\
+\end{tabular}

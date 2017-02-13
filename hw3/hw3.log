@@ -1,0 +1,218 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.4.14)  13 FEB 2017 14:53
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**hw3.tex
+(./hw3.tex
+LaTeX2e <2011/06/27>
+Babel <3.9k> and hyphenation patterns for 2 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/usr/share/texlive/texmf-dist/tex/latex/tipa/tipa.sty
+Package: tipa 2002/08/08 TIPA version 1.1
+ (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+ (/usr/share/texlive/texmf-dist/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+) (/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.def
+File: ot1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding OT1 on input line 43.
+))) (/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+\@enLab=\toks14
+) (/usr/share/texlive/texmf-dist/tex/latex/linguex/linguex.sty
+Package: linguex 2013/05/28 Example formatting for linguistics v. 4.3
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
+) (/usr/share/texlive/texmf-dist/tex/latex/gb4e/cgloss4e.sty
+\lineone=\box26
+\linetwo=\box27
+\linethree=\box28
+\wordone=\box29
+\wordtwo=\box30
+\wordthree=\box31
+\gline=\box32
+\glossglue=\skip43
+)
+\c@ExNo=\count87
+\c@SubExNo=\count88
+\c@SubSubExNo=\count89
+\c@FnExNo=\count90
+\c@ABC=\count91
+\currentlabel=\skip44
+\lessthanten=\skip45
+\lessthanhundred=\skip46
+\lessthanthousand=\skip47
+\@Exleftmargin=\skip48
+\Exlabelwidth=\skip49
+\Extopsep=\skip50
+\Exindent=\skip51
+\SubExleftmargin=\skip52
+\SubSubExleftmargin=\skip53
+\Exlabelsep=\skip54
+\alignSubExnegindent=\skip55
+\Exredux=\skip56
+\digitwidth=\skip57
+\mindigitwidth=\skip58
+\c@ExDepth=\count92
+\c@TempExDepth=\count93
+\CollectTokens=\toks15
+LaTeX Info: Redefining \b on input line 307.
+LaTeX Info: Redefining \c on input line 311.
+LaTeX Info: Redefining \d on input line 313.
+\c@tmpaEx=\count94
+) (/usr/share/texlive/texmf-dist/tex/latex/gb4e/gb4e.sty (/usr/share/texlive/texmf-dist/tex/latex/gb4e/cgloss4e.sty
+\lineone=\box33
+\linetwo=\box34
+\linethree=\box35
+\wordone=\box36
+\wordtwo=\box37
+\wordthree=\box38
+\gline=\box39
+\glossglue=\skip59
+)
+\c@fnx=\count95
+\@xnumdepth=\count96
+\c@xnumi=\count97
+\c@xnumii=\count98
+\c@xnumiii=\count99
+\c@xnumiv=\count100
+\c@exx=\count101
+\c@rxnumi=\count102
+\c@rxnumii=\count103
+\c@rxnumiii=\count104
+\c@rxnumiv=\count105
+\lcommentsep=\skip60
+) (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\@xs@message=\write3
+\integerpart=\count106
+\decimalpart=\count107
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+) (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count108
+\Gm@cntv=\count109
+\c@Gm@tempcnt=\count110
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks17
+) (./hw3.aux)
+\openout1 = `hw3.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 39.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 39.
+ (/usr/share/texlive/texmf-dist/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 39.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 52.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 52.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 52.
+
+Overfull \hbox (10.38986pt too wide) in paragraph at lines 52--63
+[] 
+ []
+
+[1
+
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}] (./hw3.aux) ) 
+Here is how much of TeX's memory you used:
+ 2439 strings out of 495025
+ 29889 string characters out of 6181515
+ 85695 words of memory out of 5000000
+ 5667 multiletter control sequences out of 15000+600000
+ 8817 words of font info for 31 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 34i,7n,32p,272b,146s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on hw3.pdf (1 page, 34088 bytes).
+PDF statistics:
+ 20 PDF objects out of 1000 (max. 8388607)
+ 13 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
