@@ -7,6 +7,7 @@
 \usepackage{gb4e}
 \noautomath
 \usepackage{xstring}
+\usepackage{multirow}
 
 % define \phon for phonetic examples
 \newcommand{\phon}[1]{$[$\textipa{#1}$]$}
@@ -40,28 +41,98 @@ You might make some wrong guesses about the meanings of affixes, but it will get
 
 \begin{center}
 {\Large Homework 3} \\
-{\large Will Theuer}
+{\large Will Theuer\footnote{Collaborated with Julia Ruth}}
 \end{center}
 
 
 \section{Orthography}
+The following orthography was created for easier transcription of Amharic and is used in the rest of the paper.
+
 
 
 \section{Commands}
+There are eight different command forms in Amharic. In the second person, there positive and negative forms for male, female, and plural recipients. Additionally, there are both positive and negative hortative forms.
 
-\begin{tabular}{l|llllllllll}
-  verb       & \orth{meblat} & \orth{met'et'at}  & \orth{mambib}   & \orth{mawrat} & \orth{merot'}    & \orth{mek'emit'}    & \orth{mets'af}   & \orth{mehEd} \\ \hline
-  F & \orth{bI}     & \orth{t'ech'I}    & \orth{ambibI}   & \orth{awrI}   & \orth{ruch'I}    & \orth{k'uch'bE}     & \orth{ts'afI}    & \orth{hIjI} \\
-  M & \orth{bila}   & \orth{t'et'a}     & \orth{ambib}    & \orth{awr}    & \orth{rut'}      & \orth{k'uch'bel}    & \orth{ts'af}     & \orth{hId} \\
-  P & \orth{bilu}   & \orth{t'et'u}     & \orth{ambibu}   & \orth{awru}   & \orth{rut'u}     & \orth{k'uch'belu}   & \orth{ts'afu}    & \orth{hIdu} \\
-  H & \orth{inibla} & \orth{init'eta}   & \orth{inambib}  & \orth{inawra} & \orth{inirut'}   & \orth{inik'emit'}   & \orth{inits'af}  & \orth{inihId} \\
-  NF & \orth{atibI}  & \orth{atit'ech'I} & \orth{atambibI} & \orth{atawrI} & \orth{atiruch'I} & \orth{atik'emich'I} & \orth{atits'afI} & \orth{atihIjI} \\
-  NM & \orth{atibla} & \orth{atit'et'a}  & \orth{atambib}  & \orth{atawr}  & \orth{atirut'}   & \orth{atik'emit'}   & \orth{atits'af}  & \orth{atihId} \\
-  NP & \orth{atiblu} & \orth{atit'et'u}  & \orth{atambibu} & \orth{atawru} & \orth{atirut'u}  & \orth{atik'emit'u}  & \orth{atits'afu} & \orth{atihIdu} \\
-  NH & \orth{anibla} & \orth{anit'et'a}  & \orth{anambib}  & \orth{anawra} & \orth{anirut'}   & \orth{anik'emit'}   & \orth{anits'af}  & \orth{anihId} \\
+\begin{table}[ht]
+\centering
+\caption{Command forms}
+\label{tab:commands-data}
+\begin{tabular}{l|lll|llll}
+     & \multicolumn{3}{c}{group 1}                                          & \multicolumn{4}{c}{group 2} \\
+     & \orth{meblat} & \orth{metENat} & \orth{met'et'at}  & \orth{mambib}   & \orth{merot'}    & \orth{mets'af}   & \orth{mehEd} \\ \hline
+  F  & \orth{bI}     & \orth{tENI}    & \orth{t'ech'I}    & \orth{ambibI}   & \orth{ruch'I}    & \orth{ts'afI}    & \orth{hIjI} \\
+  M  & \orth{bila}   & \orth{tENa}    & \orth{t'et'a}     & \orth{ambib}    & \orth{rut'}      & \orth{ts'af}     & \orth{hId} \\
+  P  & \orth{bilu}   & \orth{tENu}    & \orth{t'et'u}     & \orth{ambibu}   & \orth{rut'u}     & \orth{ts'afu}    & \orth{hIdu} \\
+  H  & \orth{inibla} & \orth{initENa} & \orth{init'eta}   & \orth{inambib}  & \orth{inirut'}   & \orth{inits'af}  & \orth{inihId} \\
+  NF & \orth{atibI}  & \orth{atitENI} & \orth{atit'ech'I} & \orth{atambibI} & \orth{atiruch'I} & \orth{atits'afI} & \orth{atihIjI} \\
+  NM & \orth{atibla} & \orth{atitENa} & \orth{atit'et'a}  & \orth{atambib}  & \orth{atirut'}   & \orth{atits'af}  & \orth{atihId} \\
+  NP & \orth{atiblu} & \orth{atitENu} & \orth{atit'et'u}  & \orth{atambibu} & \orth{atirut'u}  & \orth{atits'afu} & \orth{atihIdu} \\
+  NH & \orth{anibla} & \orth{anitENa} & \orth{anit'et'a}  & \orth{anambib}  & \orth{anirut'}   & \orth{anits'af}  & \orth{anihId} \\
 \end{tabular}
+\end{table}
 
+\subsection{Roots}
 
+To analyze these command forms, it is important to recognize the verb root. Each infinitive form starts with the prefix /me-/. In some of these forms, the /e/ is dropped when the root begins with a vowel.
+
+\begin{exe}
+  \ex \gll me-ambib $>$ \phon{mambib} \\
+      INF-read \\
+      \trans `to read'
+\end{exe}
+
+\noindent Verbs are broken up into two different groups based on their root structure. Group 1 nouns (as seen in table \ref{tab:commands-data}) have roots consisting of two syllables where the second syllable is CV. These nouns also have a word-final /-t/ indicating the infinitive. 
+
+\begin{exe}
+  \ex \gll \orth{me-tENa-t} \\
+      INF-sleep-INF \\
+      \trans `to sleep'
+\end{exe}
+
+\noindent The language may require verbs to end in a consonant in their infinitive forms. Therefore, verbs in group 1 take an extra /-t/, while the verbs in group 2 already have a final consonant as part of the verb root. The verbs from table \ref{tab:commands-data} must have the following roots:
+
+\begin{table}[ht]
+\centering
+\caption{Verb roots}
+\label{tab:commands-roots}
+\begin{tabular}{l|lll|llll}
+        & \multicolumn{3}{c}{group 1}               &    \multicolumn{4}{c}{group 2} \\ \hline
+  root  & \orth{bla} & \orth{tENa} & \orth{t'et'a}  & \orth{ambib}   & \orth{rot'}    & \orth{ts'af}   & \orth{hEd} \\
+  trans & eat        & sleep       & drink          & read           & run            & write          & go \\
+\end{tabular}
+\end{table}
+
+\subsection{Command affixes}
+The different command forms are encoded through affixes which are attached to the verb root.
+
+\begin{table}[h]
+\centering
+\caption{Command affixes}
+\label{tab:commands-affixes}
+\begin{tabular}{l|l}
+  form & affix\\ \hline
+  F  & \orth{-I} \\
+  M  & \orth{-$\emptyset$}\\
+  P  & \orth{-u}\\
+  H  & \orth{in- -a}\\
+  NF & \orth{at- -i}\\
+  NM & \orth{at- -$\emptyset$}\\ 
+  NP & \orth{at- -u}\\
+  NH & \orth{an- -a}\\
+\end{tabular}
+\end{table}
+
+In the case of group 1 verbs, the final vowel is dropped when there is a suffix. However, the final vowel of group 2 verbs is preserved in the masculine forms, where there is no additional suffix.
+
+\begin{exe}
+  \ex \gll \orth{tENa-$\emptyset$} \\
+      sleep-2M.IMP \\
+      \trans `sleep! (to a man)'
+
+  \ex \gll \orth{ambib-$\emptyset$} \\
+      read-2M.IMP \\
+      \trans `read! (to a man)'
+\end{exe}
 
 \end{document}
 
