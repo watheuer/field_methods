@@ -8,6 +8,7 @@
 \noautomath
 \usepackage{xstring}
 \usepackage{multirow}
+\usepackage{multicol}
 
 % define \phon for phonetic examples
 \newcommand{\phon}[1]{$[$\textipa{#1}$]$}
@@ -48,10 +49,39 @@ You might make some wrong guesses about the meanings of affixes, but it will get
 \section{Orthography}
 The following orthography was created for easier transcription of Amharic and is used in the rest of the paper.
 
+\begin{table}[ht]
+\centering
+\caption{Vowels}
+\label{tab:orthography-vowels}
+\begin{tabular}{lll}
+  \orth{I} \phon{i} & \orth{i} \phon{1} & \orth{u} \phon{u} \\
+  \orth{E} \phon{e} &                   & \orth{o} \phon{o} \\
+  \orth{  e} \phon{E} &                   & \orth{a} \phon{A} \\
+\end{tabular}
+\end{table}
 
+\noindent Consonants remain largely the same as their IPA equivalents, with the exception of the affricates.
+
+\begin{table}[ht]
+\centering
+\caption{Consonant Phonemes}
+\label{consonants}
+\begin{tabular}{llllllll}
+ Bilabial & Labiodental & Alveolar  & Postalveolar & Palatal & Velar     & Glottal \\ \hline
+ p   b    &             & t   t'  d &              &         & k   k'  g & '\phon{P}       \\
+ m        &             & n         &              &         &           &         \\ 
+          &             & r         &              &         &           &         \\ 
+ f        &             & s   z     & sh\phon{\textipa{S}}  &         &           & h       \\
+          &             &           &              & y\phon{j}&           &         \\
+          &             & l         &              &         &           &        \\ 
+        
+\end{tabular}\\
+Other sounds: w (labio-velar approximant) \\
+Affricates: ch\phon{\textteshlig}, ch'\phon{\textteshlig'}, ts', j\phon{\textdyoghlig}
+\end{table}
 
 \section{Commands}
-There are eight different command forms in Amharic. In the second person, there positive and negative forms for male, female, and plural recipients. Additionally, there are both positive and negative hortative forms.
+There are eight different command forms in Amharic. In the second person, there positive and negative forms for male, female, and plural recipients. Additionally, there are both positive and negative hortative forms. Some examples are shown in table \ref{tab:commands-data}.\footnote{In this table, F represents a command directed toward a female, M represents male, P represents plural, H represents hortative `let's', and N represents the negative form of each.}
 
 \begin{table}[ht]
 \centering
@@ -73,7 +103,7 @@ There are eight different command forms in Amharic. In the second person, there 
 
 \subsection{Roots}
 
-To analyze these command forms, it is important to recognize the verb root. Each infinitive form starts with the prefix /me-/. In some of these forms, the /e/ is dropped when the root begins with a vowel.
+To analyze these command forms, it is important to recognize the verb root. Each infinitive form starts with the prefix /me-/. In some of these forms, the /e/ is dropped when the root begins with a vowel.\footnote{In these glosses, \textsc{INF} represents the infinitive, \textsc{2M.IMP} represents the second person masculine imperative, etc.}
 
 \begin{exe}
   \ex \gll me-ambib $>$ \phon{mambib} \\
@@ -81,7 +111,7 @@ To analyze these command forms, it is important to recognize the verb root. Each
       \trans `to read'
 \end{exe}
 
-\noindent Verbs are broken up into two different groups based on their root structure. Group 1 nouns (as seen in table \ref{tab:commands-data}) have roots consisting of two syllables where the second syllable is CV. These nouns also have a word-final /-t/ indicating the infinitive. 
+Verbs are broken up into two different groups based on their root structure. Group 1 nouns (as seen in table \ref{tab:commands-data}) have roots consisting of two syllables where the second syllable is CV. These nouns also have a word-final /-t/ indicating the infinitive. 
 
 \begin{exe}
   \ex \gll \orth{me-tENa-t} \\
@@ -89,7 +119,7 @@ To analyze these command forms, it is important to recognize the verb root. Each
       \trans `to sleep'
 \end{exe}
 
-\noindent The language may require verbs to end in a consonant in their infinitive forms. Therefore, verbs in group 1 take an extra /-t/, while the verbs in group 2 already have a final consonant as part of the verb root. The verbs from table \ref{tab:commands-data} must have the following roots:
+\noindent The language may require verbs to end in a consonant in their infinitive forms. Therefore, verbs in group 1 take an extra /-t/, while the verbs in group 2 already have a final consonant as part of the verb root. Alternatively, the /-t/ suffix may exist underlyingly for every infinitive, and the word-final custers that would be produced in group 2 verbs are not allowed. The verbs from table \ref{tab:commands-data} have the following roots:
 
 \begin{table}[ht]
 \centering
@@ -97,8 +127,8 @@ To analyze these command forms, it is important to recognize the verb root. Each
 \label{tab:commands-roots}
 \begin{tabular}{l|lll|llll}
         & \multicolumn{3}{c}{group 1}               &    \multicolumn{4}{c}{group 2} \\ \hline
-  root  & \orth{bla} & \orth{tENa} & \orth{t'et'a}  & \orth{ambib}   & \orth{rot'}    & \orth{ts'af}   & \orth{hEd} \\
-  trans & eat        & sleep       & drink          & read           & run            & write          & go \\
+  root  & \orth{bila} & \orth{tENa} & \orth{t'et'a}  & \orth{ambib}   & \orth{rot'}    & \orth{ts'af}   & \orth{hEd} \\
+  translation & eat        & sleep       & drink          & read           & run            & write          & go \\
 \end{tabular}
 \end{table}
 
@@ -115,23 +145,78 @@ The different command forms are encoded through affixes which are attached to th
   M  & \orth{-$\emptyset$}\\
   P  & \orth{-u}\\
   H  & \orth{in- -a}\\
-  NF & \orth{at- -i}\\
+  NF & \orth{at- -I}\\
   NM & \orth{at- -$\emptyset$}\\ 
   NP & \orth{at- -u}\\
   NH & \orth{an- -a}\\
 \end{tabular}
 \end{table}
 
-In the case of group 1 verbs, the final vowel is dropped when there is a suffix. However, the final vowel of group 2 verbs is preserved in the masculine forms, where there is no additional suffix.
+In the case of group 1 verbs, the final vowel is dropped when there is a suffix (as in (\ref{ex:group2-f})). However, the final vowel of group 2 verbs is preserved in the masculine forms, where there is no additional suffix. This can be seen in (\ref{ex:group2-m}).
 
+\begin{multicols}{2}
 \begin{exe}
-  \ex \gll \orth{tENa-$\emptyset$} \\
-      sleep-2M.IMP \\
-      \trans `sleep! (to a man)'
+  \ex\label{ex:group2-m}
+    \gll \orth{tENa-$\emptyset$} \\
+    sleep-2M.IMP \\
+    \trans `sleep! (to a man)'
 
+  \ex\label{ex:group2-f}
+    \gll \orth{tEN-I} \\
+    sleep-2F.IMP \\
+    \trans `sleep! (to a woman)'
+\end{exe}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{exe}
   \ex \gll \orth{ambib-$\emptyset$} \\
       read-2M.IMP \\
       \trans `read! (to a man)'
+
+  \ex \gll \orth{ambib-I} \\
+      read-2F.IMP \\
+      \trans `read! (to a woman)'
+\end{exe}
+\end{multicols}
+
+In addition to the affixes, the root vowel changes for some verbs in the imperative form. Examples of this in table \ref{tab:commands-data} include \textit{\orth{merot'}} and \textit{\orth{mehEd}}, which are shown in (\ref{ex:stem-merot}) and (\ref{ex:stem-mehed}).
+
+\begin{exe}
+  \ex\label{ex:stem-merot} \textit{\orth{merot'}} `to run' $\rightarrow$ \textit{\orth{rut'}} `run! (to a male)'
+  \ex\label{ex:stem-mehed} \textit{\orth{mehEd}} `to go' $\rightarrow$ \textit{\orth{hId}} `go! (to a male)'
+\end{exe}
+
+\noindent This process occurs in one-syllable verb roots. More data would is required to determine whether this process is phonological, but we can put together the following correspondences:
+
+\begin{exe}
+  \ex \begin{enumerate}
+    \item \orth{E $\rightarrow$ I}
+    \item \orth{o $\rightarrow$ u}
+    \item \orth{a $\rightarrow$ a} (no change)
+  \end{enumerate}
+\end{exe}
+In the case of \orth{E} and \orth{o}, these vowels are being raised, but we do not see a similar process with \orth{a}.
+
+In the feminine forms of many commands, the consonant before the /-\orth{I}/ suffix becomes palatalized. This can be seen in \ref{ex:palatalized1} and \ref{ex:palatalized2}, and appears to only occur with /t/ and /d/.
+\begin{multicols}{2}
+\begin{exe}
+  \ex\label{ex:palatalized1}
+  \gll \orth{t'ech'-I} \\
+    drink-2F.IMP \\
+    \trans `drink! (to a female)'
+
+  \ex\label{ex:palatalized2}
+  \gll \orth{jIj-I} \\
+    go-2F.IMP \\
+    \trans `go! (to a female)'
+\end{exe}
+\end{multicols}
+
+\noindent This can be captured with the following phonological rule. This does not appear to be a general rule in the language and may be specific to commands.
+
+\begin{exe}
+  \ex voiceless stop $\rightarrow$ palatalized $/$ \_ \orth{I}
 \end{exe}
 
 \end{document}
