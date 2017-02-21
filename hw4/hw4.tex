@@ -1,0 +1,117 @@
+\documentclass[12pt]{article}
+
+% packages
+\usepackage{tipa}
+\usepackage{enumerate}
+\usepackage{linguex}
+\usepackage{gb4e}
+\noautomath
+\usepackage{xstring}
+\usepackage{multirow}
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+\makesavenoteenv{table}
+
+% define \phon for phonetic examples
+\newcommand{\phon}[1]{$[$\textipa{#1}$]$}
+\newcommand{\orth}[1]{\textit{\StrSubstitute{#1}{I}{\'{i}}[\x]\StrSubstitute{\x}{E}{\'{e}}[\x]\StrSubstitute{\x}{N}{\~{n}}[\x]\x}}
+
+% margins and spacing
+\usepackage[letterpaper, margin=1in]{geometry}
+
+\iffalse
+Possession: 
+
+We've seen two patterns for possession: ijé 'my hand' and yené ij 'my hand'. Name the two patterns and describe their uses (what is the difference between the two patterns? are both used for alienable and inalienable possession?). Make sure you include the different persons (with examples--not just a chart) and any variation in the form of affixes. Remember that possession is not just forms meaning 'my', 'your', etc.: you also need to include forms like 'Rachel's hand'.
+
+You don't need to describe the use of -u and -wa for definiteness right now.
+\fi
+
+
+\begin{document}
+
+\begin{center}
+{\Large Homework 4} \\
+{\large Will Theuer}
+\end{center}
+
+\section{Possession}
+
+There are two different strategies for possession in Amharic.
+
+\subsection{Suffixes}
+
+Possession is marked with noun suffixes. Second and third person singular suffixes distinguish between male and femaile, but the plural forms are not gendered.
+
+\begin{exe}
+  \ex \orth{doro-E} `my chicken'\\
+      \orth{doro-i} `your (m) chicken'\\
+      \orth{doro-ish} `your (f) chicken'\\
+      \orth{doro-u} `his chicken'\\
+      \orth{doro-wa} `her chicken'
+\end{exe}
+
+All plural suffixes begin with \orth{ach-}. These suffixes may by further analyzable as \orth{-ach-in, -ach-un, and -ach-ew}.
+\begin{exe}
+  \ex \orth{doro-achin} `our chicken' \\
+      \orth{doro-achun} `your (pl) chicken'\\
+      \orth{doro-achew} `their chicken'
+\end{exe}
+
+\subsection{Contrast forms}
+
+\begin{table}[ht]
+\centering
+\caption{Contrast forms}
+\label{tab:contrast}
+  \begin{tabular}{llll}
+    \orth{yenE ij}      & `my hand'             & \orth{ij-E} & `my hand' \\
+    \orth{yante ij}     & `your (m) hand'       & \orth{ij-ih} & `your (m) hand'\\
+    \orth{yanchI ij}    & `your (f) hand'       & \orth{ij-ish} & `your (f) hand'\\
+    \orth{yesu ij}      & `his hand'            & \orth{ij-u} & `his hand'\\
+    \orth{yeswa ij}     & `her hand'            & \orth{ij-wa} & `her hand'\\
+    \orth{yenya ij-och} & `our hands'           & \orth{ij-och-achin} & `our hands'\\
+    -\footnote{There was no example of a contrast form for the second person plural (you all).} & - & \orth{ij-och-achun} & `your (pl) hands'  \\ 
+    \orth{yenesu ij-och} & `their hands' & \orth{ij-och-achew} & `their hands' \\
+ \end{tabular}
+\end{table}
+
+Possessive forms like `Rachel's hand' are constructed similarly. As in (\ref{ex:bad_possession}), these constructions do not work with the suffix forms in the previous section.
+
+\begin{exe}
+  \ex \orth{je Rachel ij} `Rachel's hand'
+  \ex\label{ex:bad_possession} *\orth{Rachel ijwa} `Rachel's hand'
+  \ex \orth{je Abe ij} `Abe's hand'
+\end{exe}
+
+\section{Pronouns}
+
+\iffalse
+Pronouns:
+What types of pronouns are there and what names will you give them? So far I see words like iné  'I', ihé 'this', and yené 'mine'. I would probably list interrogative pronouns in a chapter on questions.
+Grading rubric: Did you describe all the patterns in the data in a logical, well-ordered way? Do you rise above details to give a good feel for how the language works? Did you include enough data to document the language? Is your data accurate? Are you using normal format and terms for describing a language? Do you define your terms? Is your writing carefully edited?
+\fi
+
+\begin{table}[ht]
+\centering
+\caption{Pronouns}
+\label{tab:pronouns}
+  \begin{tabular}{ll}
+    \orth{inE} & I \\
+    \orth{ante} & you (m) \\
+    \orth{anchI} & you (f) \\
+    \orth{isu} & he \\
+    \orth{iswa} & she \\
+    \orth{inya} & we \\
+    \orth{inante} & you (pl) \\
+    \orth{inesu} & they \\
+  \end{tabular}
+\end{table}
+
+\begin{exe}
+  \ex \orth{ihE k'ey wef new} `This is a red bird'
+  \ex \orth{inezI k'ey wefoch nachew} `These birds are red'
+\end{exe}
+
+\end{document}
+

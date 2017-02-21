@@ -1,0 +1,21 @@
+\documentclass[12pt]{article}
+
+% packages
+\usepackage{tipa}
+\usepackage{enumerate}
+\usepackage{linguex}
+\usepackage{gb4e}
+\noautomath
+\usepackage{xstring}
+\usepackage{multirow}
+
+% define \phon for phonetic examples
+\newcommand{\phon}[1]{$[$\textipa{#1}$]$}
+\newcommand{\orth}[1]{\StrSubstitute{#1}{I}{\'{i}}[\x]\StrSubstitute{\x}{E}{\'{e}}[\x]\StrSubstitute{\x}{N}{\~{n}}[\x]\x}
+
+% margins and spacing
+\usepackage[letterpaper, margin=1in]{geometry}
+
+\begin{document}
+
+\end{document}
