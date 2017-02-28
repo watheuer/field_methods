@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+
+% packages
+\usepackage{tipa}
+\usepackage{enumerate}
+\usepackage{linguex}
+\usepackage{gb4e}
+\noautomath
+\usepackage{xstring}
+\usepackage{multirow}
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+\makesavenoteenv{table}
+
+% define \phon for phonetic examples
+\newcommand{\phon}[1]{$[$\textipa{#1}$]$}
+\newcommand{\orth}[1]{\textit{\StrSubstitute{#1}{I}{\'{i}}[\x]\StrSubstitute{\x}{E}{\'{e}}[\x]\StrSubstitute{\x}{N}{\~{n}}[\x]\x}}
+
+% margins and spacing
+\usepackage[letterpaper, margin=1in]{geometry}
+
+\iffalse
+1. Describe copular ('be') sentences in Amharic in two sections:
+
+a. What is the structure and order of constituents in copular sentences? What types of complements does the 'be' element take? Is the 'be' element a verb? What forms (case, etc.) are used for the subject and complement? Be careful in this section not to confuse noun and noun phrase, adjective and adjective phrase, etc. Go ahead and make assumptions about parts of speech if it helps (e.g., noun vs. adjective).
+
+b. Present tense and negative forms of the copula. Give the different person and number forms of the copula in the present tense in affirmative and negative forms:
+
+neny ‘I am’                                                          aydelehum ‘I am not’
+
+neh ‘you m. are’                                                  aydelehim ‘you m. are not’
+
+If you feel you can divide these forms into morphemes, then add hyphens.
+
+For consistency, I recommend that you use this order for person/number/gender (and with these abbreviations): 1S, 2SM, 2SF, 3SM, 3SF, 1P, 2P, 3P.
+
+2. Past affirmative and negative forms of merot' 'to run'. We don't yet have enough data to describe person marking, tense, and negation. For now, all you have to do in this section is start assembling the data by typing up the forms of merot' 'to run' in the past affirmative and past negative, like this:
+
+rot’kuwin ‘I ran’                                                          alrot’kum ‘I didn’t run’
+
+rot’k ‘you m. ran’                                                        alrot’kim ‘you m. didn’t run’
+
+If you can add hyphens (even as guesses) to divide forms into morphemes, then go ahead and do it. You don't have to say anything about these forms yet: just give me the paradigm.
+
+You are free to talk about the data with others in the class. Please do your own analysis and typing/arranging (you figure out the data in part by sifting through examples and arranging them).
+\fi
+
+
+\begin{document}
+
+\begin{center}
+{\Large Homework 5} \\
+{\large Will Theuer}
+\end{center}
+
+\section{Copular sentences}
+
+\subsection{Structure}
+
+\begin{exe}
+  \ex \gll \orth{wef-och} \orth{tinishIyE} \orth{nachew} \\
+  bird-\textsc{p} small be\textbackslash\textsc{3p} \\
+  \trans `The birds are small'
+
+  \ex \gll \orth{ichI} \orth{wef} \orth{tinishIyE} \orth{nat} \\
+  this bird small be\textbackslash\textsc{3sf} \\
+  \trans `This bird is small'
+\end{exe}
+
+\subsection{Copula forms}
+
+\begin{table}[ht]
+\centering
+\caption{Copula forms}
+\label{tab:copula}
+  \begin{tabular}{l|llll}
+    form & affirmative & & negative & \\ \hline
+    \textsc{1s}  & neny & `I am'          & aydelehum & `I am not'\\
+    \textsc{2sm} & neh & `You (m) are'    & aydelehim & `You (m) are not'\\
+    \textsc{2sf} & nesh & `You (f) are'   & aydeleshim & `You (f) are not'\\
+    \textsc{3sm} & new & `He is'          & aydelem & `He is not'\\
+    \textsc{3sf} & nech/nat & `She is'    & aydelechim & `She is not'\\
+    \textsc{1p}  & nen & `We are'         & aydelenim & `We are not'\\
+    \textsc{2p}  & nachu & `You (pl) are' & aydelachum & `You (pl) are not'\\
+    \textsc{3p}  & nachew & `They are'    & aydelum & `They are not'\\
+  \end{tabular}
+\end{table}
+
+
+\section{Negation}
+
+\end{document}
