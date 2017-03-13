@@ -8,7 +8,9 @@
 \noautomath
 \usepackage{xstring}
 \usepackage{multirow}
+\usepackage{multicol}
 \usepackage{footnote}
+\usepackage{qtree}
 \makesavenoteenv{tabular}
 \makesavenoteenv{table}
 
@@ -18,33 +20,6 @@
 
 % margins and spacing
 \usepackage[letterpaper, margin=1in]{geometry}
-
-\iffalse
-1. Describe copular ('be') sentences in Amharic in two sections:
-
-a. What is the structure and order of constituents in copular sentences? What types of complements does the 'be' element take? Is the 'be' element a verb? What forms (case, etc.) are used for the subject and complement? Be careful in this section not to confuse noun and noun phrase, adjective and adjective phrase, etc. Go ahead and make assumptions about parts of speech if it helps (e.g., noun vs. adjective).
-
-b. Present tense and negative forms of the copula. Give the different person and number forms of the copula in the present tense in affirmative and negative forms:
-
-neny ‘I am’                                                          aydelehum ‘I am not’
-
-neh ‘you m. are’                                                  aydelehim ‘you m. are not’
-
-If you feel you can divide these forms into morphemes, then add hyphens.
-
-For consistency, I recommend that you use this order for person/number/gender (and with these abbreviations): 1S, 2SM, 2SF, 3SM, 3SF, 1P, 2P, 3P.
-
-2. Past affirmative and negative forms of merot' 'to run'. We don't yet have enough data to describe person marking, tense, and negation. For now, all you have to do in this section is start assembling the data by typing up the forms of merot' 'to run' in the past affirmative and past negative, like this:
-
-rot’kuwin ‘I ran’                                                          alrot’kum ‘I didn’t run’
-
-rot’k ‘you m. ran’                                                        alrot’kim ‘you m. didn’t run’
-
-If you can add hyphens (even as guesses) to divide forms into morphemes, then go ahead and do it. You don't have to say anything about these forms yet: just give me the paradigm.
-
-You are free to talk about the data with others in the class. Please do your own analysis and typing/arranging (you figure out the data in part by sifting through examples and arranging them).
-\fi
-
 
 \begin{document}
 
@@ -56,18 +31,58 @@ You are free to talk about the data with others in the class. Please do your own
 \section{Copular sentences}
 
 \subsection{Structure}
+\iffalse
+a. What is the structure and order of constituents in copular sentences? What types of complements does the 'be' element take? Is the 'be' element a verb? What forms (case, etc.) are used for the subject and complement? Be careful in this section not to confuse noun and noun phrase, adjective and adjective phrase, etc. Go ahead and make assumptions about parts of speech if it helps (e.g., noun vs. adjective).
+\fi
+
+The `be' element is the verb \orth{new} (here in the masculine form; all forms can be seen in table \ref{tab:copula}). Copular sentences generally have the form SOV. The objects in each of these sentences can be phrases headed either by nouns, the class of words that includes things, or by adjectives, the class of words that are used to modify nouns.  These two options are shown in (\ref{ex:cop-adj}) and (\ref{ex:cop-n}). 
 
 \begin{exe}
-  \ex \gll \orth{wef-och} \orth{tinishIyE} \orth{nachew} \\
+  \ex\label{ex:cop-adj} \gll \orth{wef-och} \orth{tinishIyE} \orth{nachew} \\
   bird-\textsc{p} small be\textbackslash\textsc{3p} \\
-  \trans `The birds are small'
+  \trans `The birds are small'\footnote{In these glosses, \textsc{3sf} means third person singular feminine, \textsc{p} means plural, etc.}
 
+  \iffalse
   \ex \gll \orth{ichI} \orth{wef} \orth{tinishIyE} \orth{nat} \\
   this bird small be\textbackslash\textsc{3sf} \\
   \trans `This bird is small'
+  \fi
+
+  \ex\label{ex:cop-n} \gll \orth{Arsema} \orth{temarI} \orth{nech} \\
+  Arsema student be\textbackslash\textsc{3sf} \\
+  \trans{Arsema is a student}
 \end{exe}
 
+The difference between these phrases is sometimes dependent on word order.  In (\ref{ex:cop-order-adj}), \orth{k'ey} `red' is a complement of the verb. In (\ref{ex:cop-order-n}), it modifies the noun phrase, which is a complement of the \orth{new}.
+
+\begin{multicols}{2}
+\begin{exe}
+  \ex\label{ex:cop-order-adj}
+  \Tree [.S [.DP [.D \orth{ihE}\\this ] [.NP [.N \orth{wef}\\bird ] ] ] [.VP [.AdjP [.Adj \orth{k'ey}\\red ] ] [.V \orth{new}\\be\textbackslash\textsc{3sm} ] ] ]
+
+  \centering
+  `This bird is red'
+
+  \ex\label{ex:cop-order-n} 
+  \Tree [.S [.NP [.N \orth{ihE}\\this ] ] [.VP [.NP [.AdjP [.Adj \orth{k'ey}\\red ] ] [.N \orth{wef}\\bird ] ] [.V \orth{new}\\be\textbackslash\textsc{3sm} ] ] ]
+
+  \centering
+  `This is a red bird'
+\end{exe}
+\end{multicols}
+
+The forms of the subjects and complements are the same. 
+
+
 \subsection{Copula forms}
+\iffalse
+b. Present tense and negative forms of the copula. Give the different person and number forms of the copula in the present tense in affirmative and negative forms:
+neny ‘I am’                                                          aydelehum ‘I am not’
+neh ‘you m. are’                                                  aydelehim ‘you m. are not’
+If you feel you can divide these forms into morphemes, then add hyphens.
+\fi
+
+Table \ref{tab:copula} lists the forms of the copula in the postive and negative.
 
 \begin{table}[ht]
 \centering
@@ -86,7 +101,56 @@ You are free to talk about the data with others in the class. Please do your own
   \end{tabular}
 \end{table}
 
+The word order is SOV in both the positive and negative. The only difference between affirmative and negative is the form of the copula.
+
+\begin{exe}
+  \ex \orth{inE temarI neny} `I am a student'
+  \ex \orth{ante temarI neh} `You (m) are a student'
+  \ex \orth{anchI temarI nesh} `You (f) are a student'
+  \ex \orth{isu temarI new} `He is a student'
+  \ex \orth{iswa temarI nech} `She is a student'
+  \ex \orth{inya temarIyoch nen} `We are students'
+  \ex \orth{inante temarIyoch nachu} `You (pl) are students'
+  \ex \orth{inesu temarIyoch nachew} `They are students'
+  \ex \orth{inE temarI aydelehum} `I am not a student'
+  \ex \orth{ante temarI aydelehim} `You (m) are not a student'
+  \ex \orth{anchI temarI aydeleshim} `You (f) are not a student'
+  \ex \orth{isu temarI aydelem} `He is not a student'
+  \ex \orth{iswa temarI aydelechim} `She is not a student'
+  \ex \orth{inya temarIyoch aydelenim} `We are not students'
+  \ex \orth{inante temarIyoch aydelachum} `You (p) are not students'
+  \ex \orth{inesu temarIyoch aydelum} `They are not students'
+\end{exe}
 
 \section{Negation}
+\iffalse
+2. Past affirmative and negative forms of merot' 'to run'. We don't yet have enough data to describe person marking, tense, and negation. For now, all you have to do in this section is start assembling the data by typing up the forms of merot' 'to run' in the past affirmative and past negative, like this:
+
+rot’kuwin ‘I ran’                                                          alrot’kum ‘I didn’t run’
+rot’k ‘you m. ran’                                                        alrot’kim ‘you m. didn’t run’
+
+If you can add hyphens (even as guesses) to divide forms into morphemes, then go ahead and do it. You don't have to say anything about these forms yet: just give me the paradigm.
+You are free to talk about the data with others in the class. Please do your own analysis and typing/arranging (you figure out the data in part by sifting through examples and arranging them).
+\fi
+
+Table \ref{tab:negatives-run} shows the past affirmative and negative forms of \orth{merot'} `to run'.
+
+\begin{table}[ht]
+\centering
+\caption{Postive and negative forms of `to run'}
+\label{tab:negatives-run}
+\begin{tabular}{llll}
+  \orth{inE rot'-kuwin} & `I ran'        & \orth{inE al-rot'-ku-m} & `I didn't run' \\
+  \orth{ante rot'-k} & `You (m) ran'     & \orth{ante al-rot'-k-im} & `You (m) didn't run' \\
+  \orth{anchI rot'-sh} & `You (f) ran'   & \orth{anchIma al-rot'-sh-im} & `You (f) didn't run' \\
+  \orth{isu rot'-e} & `He ran'           & \orth{isu al-rot'-e-m} & `He didn't run' \\
+  \orth{iswa rot'-ech} & `She ran'       & \orth{iswa al-rot'-ech-im} & `She didn't run' \\
+  \orth{inya rot'-en} & `We ran'         & \orth{inya al-rot'-in-im} & `We didn't run' \\
+  \orth{inante rot'-achu} & `You (pl) ran' & \orth{inante al-rot'-achu-m} & `You (pl) didn't run' \\
+  \orth{inesu rot'-u} & `They ran'         & \orth{inesu al-rot'-u-m} & `They didn't run' \\
+\end{tabular}
+\end{table}
+
+Here, we see that the negative forms are formed by the prefix \orth{al-} and an \orth{-im} suffix which is added to the person marking suffix.
 
 \end{document}
