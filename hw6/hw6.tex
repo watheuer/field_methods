@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+
+% packages
+\usepackage{tipa}
+\usepackage{enumerate}
+\usepackage{linguex}
+\usepackage{gb4e}
+\noautomath
+\usepackage{xstring}
+\usepackage{multirow}
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+\makesavenoteenv{table}
+
+% define \phon for phonetic examples
+\newcommand{\phon}[1]{$[$\textipa{#1}$]$}
+\newcommand{\orth}[1]{\textit{\StrSubstitute{#1}{I}{\'{i}}[\x]\StrSubstitute{\x}{E}{\'{e}}[\x]\StrSubstitute{\x}{N}{\~{n}}[\x]\x}}
+
+% margins and spacing
+\usepackage[letterpaper, margin=1in]{geometry}
+
+\iffalse
+Grading rubric: Is your segmentation of words into morphemes sensible and consistent? Did you describe all the variants of the affixes? Is your description well-organized with clear paragraphs and transitions between examples and tables? Is your format appropriate and your terms clearly defined? Is your writing carefully edited?
+\fi
+
+
+\begin{document}
+
+\begin{center}
+{\Large Homework 6} \\
+{\large Will Theuer}
+\end{center}
+
+\section{Subject person marking}
+
+\subsection{Past positive, negative}
+\iffalse
+*Past tense in positive and negative.* Please describe the person marking in intransitive verbs in the past tense in the positive and negative. According to my notes, we have these forms for merot' 'to run', mezemir 'to sing', mesrat 'to work', and meblat 'to eat'. You might use a layout like this:
+
+(1)   sera-w 'I worked'                al-sera-w-m 'I didn't work'
+
+        sera-h 'you m. worked'      al-sera-h-im 'you m. didn't work'
+\fi
+\begin{exe}
+  \ex\label{ex:past:sing}
+  \begin{tabular}{ll}
+    \orth{zemer-ku}\footnote{Arsima was unsure if this form was correct, and also provided \orth{zemerkuwin}} `I sang' & \orth{al-zemer-ku-m} `I didn't sing' \\
+    \orth{zemer-k} `You (m) sang' & \orth{al-zemer-k-im} `You (m) didn't sing \\
+    \orth{zemer-sh} `You (f) sang' & \orth{al-zemer-sh-im} `You (f) didn't sing \\
+    \orth{zemer-e} `He sang' & \orth{al-zemer-e-m} `He didn't sing' \\
+    \orth{zemer-ech} `She sang' & \orth{al-zemer-ech-im} `She didn't sing' \\
+    \orth{zemer-en} `We sang' & \orth{al-zemer-en-im} `We didn't sing' \\
+    \orth{zemer-achu} `You (pl) sang' & \orth{al-zemer-achu-m} `You (pl) didn't sing' \\
+    \orth{zemer-u} `They sang' & \orth{al-zemer-u-m} `They didn't sing' \\
+  \end{tabular}
+
+  \ex\label{ex:past:work}
+  \begin{tabular}{ll}
+    \orth{sera-w} `I worked' & \orth{al-sera-w-m} `I didn't work' \\
+    \orth{sera-h} `You (m) worked' & \orth{al-sera-h-im} `You (m) didn't work \\
+    \orth{sera-sh} `You (f) worked' & \orth{al-sera-sh-im} `You (f) didn't work \\
+    \orth{sera} `He worked' & \orth{al-sera-m} `He didn't work' \\
+    \orth{sera-ch} `She worked' & \orth{al-sera-ch-im} `She didn't work' \\
+    \orth{sera-n} `We worked' & \orth{al-sera-n-im} `We didn't work' \\
+    \orth{sera-chu} `You (pl) worked' & \orth{al-sera-chu-m} `You (pl) didn't work' \\
+    \orth{ser-u} `They worked' & \orth{al-ser-u-m} `They didn't work' \\
+  \end{tabular}
+\end{exe}
+
+\subsection{Present/future positive, nevative}
+\iffalse
+*Present/future tense in positive and negative.* Please describe the person marking in intransitive verbs in the present/future tense in the positive and negative. I think we only have these forms for merot' 'to run', collected on 2/16 (irot'alew 'I run', alrot'im 'I don't run'). These forms are surprising and quite challenging.
+\fi
+
+\begin{exe}
+  \ex\label{ex:pres:run}
+  \begin{tabular}{ll}
+    \orth{inE irot'alew} `I run' & \orth{inE alrot'im} `I don't run' \\
+    \orth{ante tirot'aleh} `You (m) run' & \orth{ante atrot'im} `You (m) don't run \\
+    \orth{anchI tiroch'alesh} `You (f) run' & \orth{anchI atroch'im} `You (f) don't run \\
+    \orth{isu yIrot'ale} `He run' & \orth{isu ayrot'im} `He doesn't run' \\
+    \orth{iswa tirot'alech} `She run' & \orth{iswa atrot'im} `She doesn't run' \\
+    \orth{inya inrot'alen} `We run' & \orth{inya anrot'im} `We don't run' \\
+    \orth{inante tirot'alachu} `You (pl) run' & \orth{inante atrot'um} `You (pl) don't run' \\
+    \orth{inesu yIrot'alu} `They run' & \orth{inesu ayrot'um} `They don't run' \\
+  \end{tabular}
+\end{exe}
+
+\section{Object person marking in transitive verbs}
+\iffalse
+*Object person marking.* Please describe the object person marking in transitive verbs in the past tense (i.e., for verbs that mark the person of the subject and object). You should give a table of the suffixes and then verb forms that provide evidence for the table. You don't need to give 8 x 8 verb forms: just enough to demonstrate the object person markers and at least some subject markers to show how they interact.
+
+Please be sure to mention what "object" means: does the verb agree with the direct object, the indirect object, both, or something else?
+\fi
+
+\end{document}
