@@ -33,6 +33,8 @@ Grading rubric: Is your segmentation of words into morphemes sensible and consis
 
 \section{Subject person marking}
 
+In Amharic, subject person marking differs in each tense.
+
 \subsection{Past positive, negative}
 \iffalse
 *Past tense in positive and negative.* Please describe the person marking in intransitive verbs in the past tense in the positive and negative. According to my notes, we have these forms for merot' 'to run', mezemir 'to sing', mesrat 'to work', and meblat 'to eat'. You might use a layout like this:
@@ -41,8 +43,11 @@ Grading rubric: Is your segmentation of words into morphemes sensible and consis
 
         sera-h 'you m. worked'      al-sera-h-im 'you m. didn't work'
 \fi
+
+In the past tense, there are different affixes depending on whether the verb root ends in a consonant or a vowel. Example (\ref{ex:past:sing}) shows the different forms for a verb ending in a consonant.
+
 \begin{exe}
-  \ex\label{ex:past:sing}
+  \ex\label{ex:past:sing} \orth{mezemir} `to sing' \\
   \begin{tabular}{ll}
     \orth{zemer-ku}\footnote{Arsima was unsure if this form was correct, and also provided \orth{zemerkuwin}} `I sang' & \orth{al-zemer-ku-m} `I didn't sing' \\
     \orth{zemer-k} `You (m) sang' & \orth{al-zemer-k-im} `You (m) didn't sing \\
@@ -53,8 +58,12 @@ Grading rubric: Is your segmentation of words into morphemes sensible and consis
     \orth{zemer-achu} `You (pl) sang' & \orth{al-zemer-achu-m} `You (pl) didn't sing' \\
     \orth{zemer-u} `They sang' & \orth{al-zemer-u-m} `They didn't sing' \\
   \end{tabular}
+\end{exe}
 
-  \ex\label{ex:past:work}
+\noindent By contrast, (\ref{ex:past:work}) shows the forms for a verb root ending in a consonant.
+
+\begin{exe}
+  \ex\label{ex:past:work} \orth{mesrat} `to work' \\
   \begin{tabular}{ll}
     \orth{sera-w} `I worked' & \orth{al-sera-w-m} `I didn't work' \\
     \orth{sera-h} `You (m) worked' & \orth{al-sera-h-im} `You (m) didn't work \\
@@ -67,24 +76,45 @@ Grading rubric: Is your segmentation of words into morphemes sensible and consis
   \end{tabular}
 \end{exe}
 
+We see that if the affix begins with a vowel, this vowel is dropped when the verb ends in a vowel (with the exception of the third-person plural form \orth{seru}).
+
 \subsection{Present/future positive, nevative}
 \iffalse
 *Present/future tense in positive and negative.* Please describe the person marking in intransitive verbs in the present/future tense in the positive and negative. I think we only have these forms for merot' 'to run', collected on 2/16 (irot'alew 'I run', alrot'im 'I don't run'). These forms are surprising and quite challenging.
 \fi
 
+In the present tense, there are many different forms for the positive and negative. Each form requires a prefix and a suffix, which is summarized in table \ref{tab:pres:affixes}.
+
 \begin{exe}
-  \ex\label{ex:pres:run}
+  \ex\label{ex:pres:run} \orth{merot'} `to run' \\
   \begin{tabular}{ll}
-    \orth{inE irot'alew} `I run' & \orth{inE alrot'im} `I don't run' \\
-    \orth{ante tirot'aleh} `You (m) run' & \orth{ante atrot'im} `You (m) don't run \\
-    \orth{anchI tiroch'alesh} `You (f) run' & \orth{anchI atroch'im} `You (f) don't run \\
-    \orth{isu yIrot'ale} `He run' & \orth{isu ayrot'im} `He doesn't run' \\
-    \orth{iswa tirot'alech} `She run' & \orth{iswa atrot'im} `She doesn't run' \\
-    \orth{inya inrot'alen} `We run' & \orth{inya anrot'im} `We don't run' \\
-    \orth{inante tirot'alachu} `You (pl) run' & \orth{inante atrot'um} `You (pl) don't run' \\
-    \orth{inesu yIrot'alu} `They run' & \orth{inesu ayrot'um} `They don't run' \\
+    \orth{inE i-rot'-al-ew} `I run'              & \orth{inE al-rot'-im} `I don't run' \\
+    \orth{ante ti-rot'-al-eh} `You (m) run'      & \orth{ante at-rot'-im} `You (m) don't run \\
+    \orth{anchI ti-roch'-al-esh} `You (f) run'   & \orth{anchI at-roch'-im} `You (f) don't run \\
+    \orth{isu yI-rot'-al-e} `He run'             & \orth{isu ay-rot'-im} `He doesn't run' \\
+    \orth{iswa ti-rot'-al-ech} `She run'         & \orth{iswa at-rot'-im} `She doesn't run' \\
+    \orth{inya in-rot'-al-en} `We run'           & \orth{inya an-rot'-im} `We don't run' \\
+    \orth{inante ti-rot'-al-achu} `You (pl) run' & \orth{inante at-rot'-um} `You (pl) don't run' \\
+    \orth{inesu yI-rot'-al-u} `They run'         & \orth{inesu ay-rot'-um} `They don't run' \\
   \end{tabular}
 \end{exe}
+
+\begin{table}[ht]
+\centering
+\caption{Present/future affixes}
+\label{tab:pres:affixes}
+  \begin{tabular}{l|ll}
+    form & positive & negative \\ \hline
+    \textsc{1s}  & \orth{i- -al-ew}    & \orth{al- -im} \\ 
+    \textsc{2sm} & \orth{ti- -al-ew}   & \orth{at- -im} \\
+    \textsc{2sf} & \orth{ti- -al-esh}  & \orth{at- -im}\footnote{This form also has palatalization in the verb root.} \\
+    \textsc{3sm} & \orth{yI- -al-e}    & \orth{ay- -im} \\
+    \textsc{3sf} & \orth{ti- -al-ech}  & \orth{at- -im} \\
+    \textsc{1p}  & \orth{in- -al-en}   & \orth{an- -im} \\
+    \textsc{2p}  & \orth{ti- -al-achu} & \orth{at- -um} \\
+    \textsc{3p}  & \orth{yI- -al-u}    & \orth{ay- -um}
+  \end{tabular}
+\end{table}
 
 \section{Object person marking in transitive verbs}
 \iffalse
@@ -92,5 +122,44 @@ Grading rubric: Is your segmentation of words into morphemes sensible and consis
 
 Please be sure to mention what "object" means: does the verb agree with the direct object, the indirect object, both, or something else?
 \fi
+
+In transitive verbs, the direct object is marked by a verbal suffix which occurs after the subject suffix.
+
+\begin{exe}
+  \ex \gll \orth{ak'if-ke-ny} \\
+  hug-\textsc{2sm.subj}-\textsc{1s.obj} \\
+  \trans `You (m) hugged me'
+\end{exe}
+
+\begin{table}[ht]
+\centering
+\caption{Subject and object suffixes}
+\label{tab:person-marking}
+  \begin{tabular}{l|ll}
+    form & subject &  object \\ \hline
+    \textsc{1s}  & \orth{-ku}    & \orth{-eny} \\ 
+    \textsc{2sm} & \orth{-k}    & \orth{-eh} \\
+    \textsc{2sf} & \orth{-sh}   & \orth{-ish} \\
+    \textsc{3sm} & \orth{-e}     & \orth{-t, -ew} \\
+    \textsc{3sf} & \orth{-echi}  & \orth{-(w)at} \\
+    \textsc{1p}  & \orth{-en}    & \orth{-en}\footnote{This possibly becomes \orth{-n} after a palatalized consonant.} \\
+    \textsc{2p}  & \orth{-achu-} & \orth{-(w)achu} \\
+    \textsc{3p}  & \orth{-u}     & \orth{-(w)achew}
+  \end{tabular}
+\end{table}
+
+\begin{exe}
+  \ex \orth{mak'if} `to hug' \\
+  \begin{tabular}{ll}
+    \orth{ak'if-e-ny}  & `He hugged me' \\
+    \orth{ak'if-e-h}   & `He hugged you (m)' \\
+    \orth{ak'if-e-sh}  & `He hugged you (f)' \\
+    \orth{ak'if-e-w}   & `He hugged him' \\
+    \orth{ak'if-at}    & `He hugged her' \\
+    \orth{ak'if-e-n}   & `He hugged us' \\
+    \orth{ak'if-achu}  & `He hugged you (pl)' \\
+    \orth{ak'if-achew} & `He hugged them' 
+  \end{tabular}
+\end{exe}
 
 \end{document}
