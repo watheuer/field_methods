@@ -8,6 +8,7 @@
 \noautomath
 \usepackage{xstring}
 \usepackage{multirow}
+\usepackage{multicol}
 \usepackage{footnote}
 \makesavenoteenv{tabular}
 \makesavenoteenv{table}
@@ -49,7 +50,7 @@ In the past tense, there are different affixes depending on whether the verb roo
 \begin{exe}
   \ex\label{ex:past:sing} \orth{mezemir} `to sing' \\
   \begin{tabular}{ll}
-    \orth{zemer-ku}\footnote{Arsima was unsure if this form was correct, and also provided \orth{zemerkuwin}} `I sang' & \orth{al-zemer-ku-m} `I didn't sing' \\
+    \orth{zemer-ku}\footnote{Arsema was unsure if this form was correct, and also provided \orth{zemerkuwin}} `I sang' & \orth{al-zemer-ku-m} `I didn't sing' \\
     \orth{zemer-k} `You (m) sang' & \orth{al-zemer-k-im} `You (m) didn't sing \\
     \orth{zemer-sh} `You (f) sang' & \orth{al-zemer-sh-im} `You (f) didn't sing \\
     \orth{zemer-e} `He sang' & \orth{al-zemer-e-m} `He didn't sing' \\
@@ -76,7 +77,7 @@ In the past tense, there are different affixes depending on whether the verb roo
   \end{tabular}
 \end{exe}
 
-All V-final forms preserve the final root vowel with the exception of the third-person plural form \orth{seru}. In this form, the final vowel is dropped and replaced with the \orth{-u} suffix; otherwise, it would be indistinguishable from the \textsc{3sm} form. These two paradigms are summarized in table \ref{tab:past:subject-affixes}.
+For both types of verbs, the past negative is formed with the \orth{al-} prefix and the \orth{-im} suffix. All V-final forms preserve the final root vowel with the exception of the third-person plural form \orth{seru}. In this form, the final vowel is dropped and replaced with the \orth{-u} suffix; otherwise, it would be indistinguishable from the \textsc{3sm} form. These two paradigms are summarized in table \ref{tab:past:subject-affixes}.
 
 \begin{table}[h!t]
 \centering
@@ -101,7 +102,7 @@ All V-final forms preserve the final root vowel with the exception of the third-
 *Present/future tense in positive and negative.* Please describe the person marking in intransitive verbs in the present/future tense in the positive and negative. I think we only have these forms for merot' 'to run', collected on 2/16 (irot'alew 'I run', alrot'im 'I don't run'). These forms are surprising and quite challenging.
 \fi
 
-In the present tense, there are several different forms for the positive and negative. Each form requires a prefix and a suffix, which is summarized in table \ref{tab:pres:affixes}.
+In the present tense, there are several different forms for the positive and negative. Each form requires a prefix and a suffix, which is summarized in table \ref{tab:pres:affixes}. The different forms of \orth{merot'} are shown in (\ref{ex:pres:run}).
 
 \begin{exe}
   \ex\label{ex:pres:run} \orth{merot'} `to run' \\
@@ -116,6 +117,8 @@ In the present tense, there are several different forms for the positive and neg
     \orth{inesu yI-rot'-al-u} `They run'         & \orth{inesu ay-rot'-um} `They don't run' \\
   \end{tabular}
 \end{exe}
+
+In the positive forms, \orth{-al} occurs after the verb root and may represent the present tense. The four different prefixes separate the forms into four different groups, as shown in table \ref{tab:pres:affixes}. This grouping seems arbitrary; it puts all 2nd person forms in one group along with the 3rd person feminine (group 2), while other third person forms are grouped (group 3) and first person forms are not grouped (groups 1 and 4).
 
 \begin{table}[ht]
 \centering
@@ -134,6 +137,35 @@ In the present tense, there are several different forms for the positive and neg
   \end{tabular}
 \end{table}
 
+These sentences may then be glossed like in (\ref{ex:merot:pres:gloss1}) and (\ref{ex:merot:pres:gloss2}), where \textsc{g1} represents the group 1 prefix. 
+
+\begin{multicols}{2}
+\begin{exe}
+  \ex\label{ex:merot:pres:gloss1} \gll \orth{inE} \orth{i-rot'-al-ew} \\
+  I \textsc{g1.pres}-run-\textsc{pres}-\textsc{1s} \\
+  \trans `I run'
+
+  \ex\label{ex:merot:pres:gloss2} \gll \orth{ante} \orth{ti-rot'-al-eh} \\
+  \textsc{2sm} \textsc{g2.pres}-run-\textsc{pres}-\textsc{2sm} \\
+  \trans `You run'
+\end{exe}
+\end{multicols}
+
+The negative forms of each have a prefix that changes depending on which group the form is in, and the person marker is dropped. Each of these prefixes may be a variation of the \orth{al-} prefix, which is found in the past tense, and just like the past tense, each form has the \orth{-im} suffix for negation. The prefixes represent the group of the person marking, the present tense, and negation, as shown in (\ref{ex:merot:pres:neg-gloss1}) and (\ref{ex:merot:pres:neg-gloss2}).
+
+\begin{multicols}{2}
+\begin{exe}
+  \ex\label{ex:merot:pres:neg-gloss1} \gll \orth{inE} \orth{al-rot'-im} \\
+  I \textsc{g1.pres.neg}-run-\textsc{neg} \\
+  \trans `I don't run'
+
+  \ex\label{ex:merot:pres:neg-gloss2} \gll \orth{ante} \orth{at-rot'-im} \\
+  \textsc{2sm} \textsc{g2.pres.neg}-run-\textsc{neg} \\
+  \trans `You don't run'
+\end{exe}
+\end{multicols}
+
+\newpage
 \section{Object person marking in transitive verbs}
 \iffalse
 *Object person marking.* Please describe the object person marking in transitive verbs in the past tense (i.e., for verbs that mark the person of the subject and object). You should give a table of the suffixes and then verb forms that provide evidence for the table. You don't need to give 8 x 8 verb forms: just enough to demonstrate the object person markers and at least some subject markers to show how they interact.
@@ -141,33 +173,10 @@ In the present tense, there are several different forms for the positive and neg
 Please be sure to mention what "object" means: does the verb agree with the direct object, the indirect object, both, or something else?
 \fi
 
-In transitive verbs, the direct object is marked by a verbal suffix which occurs after the subject suffix (listed in table \ref{tab:pres:affixes}).
+In transitive verbs, the direct object is marked by a verbal suffix which occurs after the subject suffix (listed in table \ref{tab:pres:affixes}). In this way, the verb agrees with both the subject and the direct object. (\ref{ex:makif:obj}) shows the paradigm for the verb \orth{mak'if} `to hug.'
 
 \begin{exe}
-  \ex \gll \orth{ak'if-ke-ny} \\
-  hug-\textsc{2sm.subj}-\textsc{1s.obj} \\
-  \trans `You (m) hugged me'
-\end{exe}
-
-\begin{table}[ht]
-\centering
-\caption{Subject and object suffixes}
-\label{tab:person-marking}
-  \begin{tabular}{l|ll}
-    form & subject &  object \\ \hline
-    \textsc{1s}  & \orth{-ku}    & \orth{-eny} \\ 
-    \textsc{2sm} & \orth{-k}    & \orth{-eh} \\
-    \textsc{2sf} & \orth{-sh}   & \orth{-ish} \\
-    \textsc{3sm} & \orth{-e}     & \orth{-t, -ew} \\
-    \textsc{3sf} & \orth{-ech}  & \orth{-(w)at} \\
-    \textsc{1p}  & \orth{-en}    & \orth{-en}\footnote{This possibly becomes \orth{-n} after a palatalized consonant.} \\
-    \textsc{2p}  & \orth{-achu-} & \orth{-(w)achu} \\
-    \textsc{3p}  & \orth{-u}     & \orth{-(w)achew}
-  \end{tabular}
-\end{table}
-
-\begin{exe}
-  \ex \orth{mak'if} `to hug' \\
+  \ex\label{ex:makif:obj} \orth{mak'if} `to hug' \\
   \begin{tabular}{ll}
     \orth{ak'if-e-ny}  & `He hugged me' \\
     \orth{ak'if-e-h}   & `He hugged you (m)' \\
@@ -179,5 +188,56 @@ In transitive verbs, the direct object is marked by a verbal suffix which occurs
     \orth{ak'if-achew} & `He hugged them' 
   \end{tabular}
 \end{exe}
+
+There are several phonological processes that change the surface forms of the affixes. For example, in (\ref{ex:makif:phon1}), the third-person masculine singular subject is dropped when the object affix begins with a vowel. Additionally, in (\ref{ex:makif:phon2}), the affix occurs with an initial \orth{w} which does not occur in other forms. This \orth{w} may be inserted after consonants in the \textsc{3sf}, \textsc{2p}, and \textsc{3p} forms, but this is blocked by the underlying \orth{-e} in (\ref{ex:makif:phon1}).
+
+\begin{multicols}{2}
+\begin{exe}
+  \ex\label{ex:makif:phon1} \gll \orth{ak'if-$\emptyset$-at} \\
+  hug-\textsc{3sm.subj}-\textsc{3sf.obj} \\
+  \trans `He hugged her'
+
+  \ex\label{ex:makif:phon2} \gll \orth{ak'if-ach-wat} \\
+  hug-\textsc{2p.subj}-\textsc{3sf.obj} \\
+  \trans `He hugged you (f)'
+\end{exe}
+\end{multicols}
+
+These forms are summarized in table \ref{tab:person-marking}.
+
+\begin{table}[ht]
+\centering
+\caption{Subject and object suffixes}
+\label{tab:person-marking}
+  \begin{tabular}{l|ll}
+    form &  object \\ \hline
+    \textsc{1s}  & \orth{-ny} \\ 
+    \textsc{2sm} & \orth{-h} \\
+    \textsc{2sf} & \orth{-sh} \\
+    \textsc{3sm} & \orth{-t, -w} \\
+    \textsc{3sf} & \orth{-(w)at} \\
+    \textsc{1p}  & \orth{-en} \\
+    \textsc{2p}  & \orth{-(w)achu} \\
+    \textsc{3p}  & \orth{-(w)achew}
+  \end{tabular}
+\end{table}
+
+Additionally, we have evidence that suggests that indirect objects work similarly. In these examples, the direct object comes before the verb, and the indirect object occurs as a verbal suffix. The verb agrees with the subject and the indirect object in (\ref{ex:mestet:indirect}).
+
+\begin{exe}
+  \ex\label{ex:mestet:indirect} \orth{mest'et} `to give' \\
+  \begin{tabular}{ll}
+    \orth{mets'af set'-ech-iny} & `She gave me a book' \\
+    \orth{mets'af set'-ech-ih} & `She gave you (m) a book' \\
+    \orth{mets'af set'-ech-ish} & `She gave you (f) a book' \\
+    \orth{mets'af set'-ech-u} & `She gave him a book' \\
+    \orth{mets'af set'-ech-at} & `She gave her a book' \\
+    \orth{mets'af set'-ech-in} & `She gave us a book' \\
+    \orth{mets'af set'-ech-achu} & `She gave you (pl) a book' \\
+    \orth{mets'af set'-ech-achew} & `She gave them a book'
+  \end{tabular}
+\end{exe}
+
+\noindent In several of these forms, \orth{i} is inserted before the object prefix. This is common throughout the language, and we would expect \orth{i} to be inserted as the default vowel.
 
 \end{document}
