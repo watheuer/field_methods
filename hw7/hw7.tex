@@ -1,0 +1,106 @@
+\documentclass[12pt]{article}
+
+% packages
+\usepackage{tipa}
+\usepackage{enumerate}
+\usepackage{linguex}
+\usepackage{gb4e}
+\noautomath
+\usepackage{xstring}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+\makesavenoteenv{table}
+
+% define \phon for phonetic examples
+\newcommand{\phon}[1]{$[$\textipa{#1}$]$}
+\newcommand{\orth}[1]{\textit{\StrSubstitute{#1}{I}{\'{i}}[\x]\StrSubstitute{\x}{E}{\'{e}}[\x]\StrSubstitute{\x}{N}{\~{n}}[\x]\x}}
+
+% margins and spacing
+\usepackage[letterpaper, margin=1in]{geometry}
+% ==============================================================================================================
+
+\begin{document}
+
+\begin{center}
+{\Large Homework 7} \\
+{\large Will Theuer}
+\end{center}
+
+\section{Causatives}
+\iffalse
+1. We have seen a few examples of causatives in Amharic:
+
+kiflén ats’edawt ‘I clean my room’
+inaté kiflén asts’edachíny ‘My mom made me clean my room’
+ 
+iné arigkut ‘I did it’
+iswa asderigechíny ‘she made me do it’ [I don't know what this "de-" is]
+ 
+iné k’omkuwin ‘I stopped’
+polísu ask’omeny ‘the policeman caused me to stop’
+Describe what is going on in these pairs of examples: what is happening to the verb? how is agreement working (what is the verb agreeing with)? what is getting case marked as an object? To make your assumptions clear, draw a tree for one non-causative sentence and one causative counterpart.
+\fi
+
+\begin{exe}
+  \ex \orth{kiflEn ats'edawt} `I clean my room' \\
+      \orth{inatE kiflEn asts'edachIny} `My mom made me clean my room'
+
+  \ex \orth{inE arigkut} `I did it' \\
+      \orth{iswa asderigechIny} `She made me do it'
+\end{exe}
+
+
+\section{Reflexives}
+\iffalse
+2. Reflexives. We have seen reflexive examples like these (note: ras means 'head'):
+
+sétochu inesun ayu
+the women saw them
+ 
+sétochu irasachewn ayu
+the women saw themselves
+
+irasény tat’ebkuwin
+I washed myself
+ 
+irasin tat’ebk
+You m washed yourself
+ 
+irasishin tat’ebsh
+You f washed yourself
+ 
+irasun tat’ebe
+He washed himself
+ 
+iraswan tat’ebech
+she washed herself
+ 
+irasachin tat’eben
+we washed ourselves
+ 
+irasachun tat’ebachu
+you all washed yourselves
+ 
+irasachewn tat’ebu
+they washed themselves
+
+Describe what is going on these examples.
+\fi
+
+\begin{exe}
+  \ex \orth{mat'eb} `to wash' \\
+  \begin{tabular}{lll}
+    \orth{iras-Eny} & \orth{tat'eb-kuwin} & `I washed myself' \\
+    \orth{iras-in} & \orth{tat'eb-k} & `You (m) washed yourself'\\
+    \orth{iras-ishin} & \orth{tat'eb-sh} & `You (f) washed yourself'\\
+    \orth{iras-un} & \orth{tat'eb-e} & `He washed himself'\\
+    \orth{iras-wan} & \orth{tat'eb-ech} & `She washed herself'\\
+    \orth{iras-achin} & \orth{tat'eb-en} & `We washed ourselves'\\
+    \orth{iras-achun} & \orth{tat'eb-achu} & `You all washed yourselves'\\
+    \orth{iras-achewn} & \orth{tat'eb-u} & `They washed themselves'
+  \end{tabular}
+\end{exe}
+
+\end{document}
