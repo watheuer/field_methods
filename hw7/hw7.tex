@@ -10,6 +10,7 @@
 \usepackage{multirow}
 \usepackage{multicol}
 \usepackage{footnote}
+\usepackage{qtree}
 \makesavenoteenv{tabular}
 \makesavenoteenv{table}
 
@@ -43,6 +44,9 @@ polísu ask’omeny ‘the policeman caused me to stop’
 Describe what is going on in these pairs of examples: what is happening to the verb? how is agreement working (what is the verb agreeing with)? what is getting case marked as an object? To make your assumptions clear, draw a tree for one non-causative sentence and one causative counterpart.
 \fi
 
+Causatives are marked with the verbal prefix \orth{as-}. In the causative form, the verb agrees with the causer (in the subject position) and the causee (in the object position). This is different from the non-causative form, in which the verb agrees with the subject and the object of the sentence, as seen in (\ref{ex:caus:clean1}) with the verb \orth{mats'dat} `to clean.' However, the object is marked with the object suffix \orth{-n} in both forms. We can see the causative form in (\ref{ex:caus:clean2}).
+
+\iffalse
 \begin{exe}
   \ex \orth{mats'dat} `to clean' \\
       \orth{kiflEn ats'edawt} `I clean my room' \\
@@ -52,13 +56,25 @@ Describe what is going on in these pairs of examples: what is happening to the v
       \orth{inE arigkut} `I did it' \\
       \orth{iswa asderigechIny} `She made me do it'
 \end{exe}
+\fi
 
 \begin{exe}
-  \ex \gll \orth{kiflEn} \orth{ats'edawt} \\
-  room something \\
-  \trans `I clean my room'
+  \ex\label{ex:caus:clean1} \gll \orth{kifl-E-n} \orth{ats'eda-w-t} \\
+  room-\textsc{1s.poss-obj} clean-\textsc{1s.subj-3sm.obj} \\
+  \trans `I cleaned my room'
+
+  \ex\label{ex:caus:clean2} \gll \orth{inat-E} \orth{kifl-E-n} \orth{as-ts'eda-ch-iny} \\
+  mom-\textsc{1s.poss} room-\textsc{1s.poss-obj} \textsc{caus}-clean-\textsc{3sf.subj-1s.obj} \\
+  \trans `My mom made me clean my room'
 \end{exe}
 
+\noindent (\ref{ex:caus:tree1}) and (\ref{ex:caus:tree2}) show the structures of both sentences.
+
+\begin{exe}
+  \ex\label{ex:caus:tree1} \Tree [.S [.NP $\emptyset$ ] [.VP [.NP N\\\orth{kifl-E-n}\\room-\textsc{1s.poss-obj} ] V\\\orth{ats'eda-w-t}\\clean-\textsc{1s.subj-3sm.obj} ] ]
+
+  \ex\label{ex:caus:tree2} \Tree [.S [.NP N\\\orth{inat-E}\\mom-\textsc{1s.poss} ] [.VP [.NP N\\\orth{kifl-E-n}\\room-\textsc{1s.poss-obj} ] V\\\orth{as-ts'eda-ch-iny}\\\textsc{caus}-clean-\textsc{3sf.subj-1s.obj} ] ]
+\end{exe}
 
 \section{Reflexives}
 \iffalse
@@ -97,24 +113,35 @@ they washed themselves
 Describe what is going on these examples.
 \fi
 
+Reflexives are formed with the noun \orth{iras}, which may be derived from \orth{ras} `head.' \orth{iras} is the object of the sentence and takes a possessive and a \orth{-n/-ny} object suffix. In (\ref{ex:reflexive:wash}), we see the paradigm for the verb \orth{metat'eb} `to wash.'
+
 \begin{exe}
-  \ex \orth{mat'eb} `to wash' \\
+  \ex\label{ex:reflexive:wash} \orth{metat'eb} `to wash' \\
   \begin{tabular}{lll}
-    \orth{i-ras-Eny} & \orth{tat'eb-kuwin} & `I washed myself' \\
-    \orth{i-ras-in} & \orth{tat'eb-k} & `You (m) washed yourself'\\
-    \orth{i-ras-ishin} & \orth{tat'eb-sh} & `You (f) washed yourself'\\
-    \orth{i-ras-un} & \orth{tat'eb-e} & `He washed himself'\\
-    \orth{i-ras-wan} & \orth{tat'eb-ech} & `She washed herself'\\
-    \orth{i-ras-achin} & \orth{tat'eb-en} & `We washed ourselves'\\
-    \orth{i-ras-achun} & \orth{tat'eb-achu} & `You all washed yourselves'\\
-    \orth{i-ras-achewn} & \orth{tat'eb-u} & `They washed themselves'
+    \orth{iras-E-ny} & \orth{tat'eb-kuwin} & `I washed myself' \\
+    \orth{iras-i-n} & \orth{tat'eb-k} & `You (m) washed yourself'\\
+    \orth{iras-ish-in} & \orth{tat'eb-sh} & `You (f) washed yourself'\\
+    \orth{iras-u-n} & \orth{tat'eb-e} & `He washed himself'\\
+    \orth{iras-wa-n} & \orth{tat'eb-ech} & `She washed herself'\\
+    \orth{iras-achin} & \orth{tat'eb-en} & `We washed ourselves'\\
+    \orth{iras-achun} & \orth{tat'eb-achu} & `You all washed yourselves'\\
+    \orth{iras-achew-n} & \orth{tat'eb-u} & `They washed themselves'
   \end{tabular}
 \end{exe}
 
+Each of these forms of \orth{iras} has an added \orth{-n/-ny/-in} object suffix unless the possessive suffix already ends in \orth{n}\footnote{This is probably an object suffix that occurs throughout the language. This requires some more data to prove.}. The \orth{-ny} form occurs after the tense \orth{-E} suffix in the \textsc{1s} form, and the \orth{-in} form occurs after \orth{-ish}. This may be a result of the cluster \orth{*ishn} not being allowed in the language. (\ref{ex:reflexive:wash:gll1}) and (\ref{ex:reflexive:wash:gll2}) show the glosses of two of the forms.
+
 \begin{exe}
-  \ex \gll \orth{i-ras-E-ny} \orth{tat'eb-kuwin} \\
-  \textsc{refl}-head-\textsc{1s.poss}-\textsc{refl} wash-\textsc{1s} \\
+  \ex\label{ex:reflexive:wash:gll1} \gll \orth{iras-E-ny} \orth{tat'eb-kuwin} \\
+  \textsc{refl}-\textsc{1s.poss}-\textsc{obj} wash-\textsc{1s} \\
   \trans `I washed myself'
+
+  \ex\label{ex:reflexive:wash:gll2} \gll \orth{iras-i-n} \orth{tat'eb-k} \\
+  \textsc{refl}-\textsc{2sm.poss}-\textsc{obj} wash-\textsc{2sm} \\
+  \trans `You (m) washed yourself'
 \end{exe}
+
+The verb form is conjugated as we expect from section ??\footnote{This will point to the actual section in the final write-up...} on subject person marking. It agrees with the subject of the sentence, which either occurs before the object or only as a verbal suffix (as seen here).
+
 
 \end{document}
