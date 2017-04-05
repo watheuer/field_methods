@@ -1,0 +1,111 @@
+\documentclass[12pt]{article}
+
+% packages
+\usepackage{tipa}
+\usepackage{enumerate}
+\usepackage{linguex}
+\usepackage{gb4e}
+\noautomath
+\usepackage{xstring}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{footnote}
+\usepackage{qtree}
+\usepackage{tree-dvips}
+\makesavenoteenv{tabular}
+\makesavenoteenv{table}
+
+% define \phon for phonetic examples
+\newcommand{\phon}[1]{$[$\textipa{#1}$]$}
+\newcommand{\orth}[1]{\textit{\StrSubstitute{#1}{I}{\'{i}}[\x]\StrSubstitute{\x}{E}{\'{e}}[\x]\StrSubstitute{\x}{N}{\~{n}}[\x]\x}}
+
+% margins and spacing
+\usepackage[letterpaper, margin=1in]{geometry}
+% =================================================================================================
+
+\begin{document}
+
+\begin{center}
+{\Large Homework 8} \\
+{\large Will Theuer}
+\end{center}
+
+\iffalse
+Please describe complement clauses in Amharic. By complement clause, I mean sentences that function as arguments (subjects, objects, etc.). We've so far seen several types (patterns using different constructions):
+
+“Imet’alew” ale
+'He said, “I am coming”'
+ 
+Indemímet’a belonyal
+'He said that he’s coming'
+ “K’onjo nat?” t’eyekuwin.
+'“Is she pretty?” I asked.'
+ 
+
+K’onjo kehonech t’eyekuwin.'
+'I asked if she was pretty.' 
+ 
+
+Meblat ifeligalew.
+'I want to eat.'
+
+I would probably have a separate paragraph on each pattern.
+
+Grading rubric. 1. Did you describe the morphological patterns in complement clauses, types of complement clauses, etc.? 2. Were you explicit about the structures (trees) you're assuming? 3. Did you gloss examples, divide them into morphemes, use tabs between words, etc.? 4. Did you give enough examples so that reader would know how to construct examples?
+\fi
+\section{Complement clauses}
+
+There are several types of complement clauses in Amharic.
+
+\subsection{Null complementizer}
+
+In some cases, complement clauses are formed without an explicit complementizer. This can be seen in (\ref{ex:comp:null}).
+\begin{exe}
+  \ex\label{ex:comp:null} \gll \orth{i-met'-ale-w} \orth{belo-$\emptyset$-ny-al} \\
+  \textsc{g1.pres}-come-\textsc{pres-1s} said-\textsc{3sm.subj}-\textsc{1s.obj}-al \\
+  \trans `He said, ``I am coming'''\footnote{The meaning of the -al suffix is unknown.}
+\end{exe}
+
+\noindent In this sentence, \orth{imet'alew} `I am coming' is the object of the verb \orth{belonyal}. This sentence has the following structure:
+
+\begin{exe}
+\ex \Tree [.S [.NP N\\$\emptyset$ ] [.VP [.CP [.S [.NP N\\$\emptyset$ ] [.VP V\\\orth{imet'alew} ] ] C\\$\emptyset$ ] V\\\orth{belonyal} ] ]
+\end{exe}
+
+
+\subsection{inde- complementizer}
+
+In several other examples, the verbal prefix \orth{inde-} is used as a complementizer. This is shown in (\ref{ex:comp:inde1}) and (\ref{ex:comp:inde2}).
+\begin{exe}
+  \ex\label{ex:comp:inde1} \gll \orth{inde-mImet'a} \orth{belo-$\emptyset$-ny-al} \\
+  \textsc{comp}-come\textbackslash\textsc{3sm.past} said-\textsc{3sm.subj}-\textsc{1s.obj}-al \\
+  \trans `He said that he's coming'
+
+  \ex\label{ex:comp:inde2} \gll \orth{inde-mImet'a} \orth{negro-$\emptyset$-ny-al} \\
+  \textsc{comp}-come\textbackslash\textsc{3sm.past} told-\textsc{3sm.subj}-\textsc{1s.obj}-al \\
+  \trans `He told me he's coming'
+\end{exe}
+
+In these examples, the verb must move up to the complementizer, as shown in (\ref{ex:comp:inde:tree}).
+
+\begin{exe}
+  \ex\label{ex:comp:inde:tree} \Tree [.S [.NP N\\$\emptyset$ ] [.VP [.CP [.S [.NP N\\$\emptyset$ ] [.VP V\\\orth{mImet'a} ] ] C\\\orth{inde-} ] V\\\orth{belonyal} ] ]
+\Tree [.S [.NP N\\$\emptyset$ ] [.VP [.CP [.S [.NP N\\$\emptyset$ ] [.VP V\\$t$ ] ] C\\\orth{inde-mImet'a} ] V\\\orth{belonyal} ] ]
+\end{exe}
+
+\begin{exe}
+  \ex \gll \orth{k'onjo} \orth{kehonech} \orth{t'eyekuwin} \\
+  pretty something asked \\
+  \trans `I asked if she was pretty'
+\end{exe}
+
+Here is another paragraph. I sure hope that it works!
+
+
+\begin{exe}
+  \ex \gll \orth{meblat} \orth{ifeligalew} \\
+  eat something \\
+  \trans `I want to eat'
+\end{exe}
+
+\end{document}
