@@ -40,10 +40,65 @@ Grading rubric. 1. Did you describe the morphological patterns in relative claus
 
 \section{Relative clauses}
 
+Relative clauses in Amharic use the relativizer \orth{ye-} and work like other CPs in the language. In subject relative clauses, the verb agrees with the subject that the clause modifies and the object within the clause. This can be seen in (\ref{ex:rel:gll_subj}).
+
 \begin{exe}
-  \ex \gll \orth{ye-lebes-k-ew} \orth{libs} \orth{arIf} \orth{new} \\
-  \textsc{rel}-wear-\textsc{2sm.subj-} clothes nice be\textbackslash\textsc{3sm} \\
+  \ex\label{ex:rel:gll_subj} \gll \orth{ye-lebes-ke-w} \orth{libs} \orth{arIf} \orth{new} \\
+  \textsc{rel}-wear-\textsc{2sm.s-3s.o} clothes nice be\textbackslash\textsc{3s} \\
   \trans `What you are wearing is nice'
+\end{exe}
+
+The structure of this sentence can be seen in (\ref{ex:rel:tree_subj}). There is a gap at the subject of the embedded CP, and the verb moves up to the complementizer.
+
+\begin{exe}
+  \ex\label{ex:rel:tree_subj} \Tree [.S 
+    [.NP
+      [.CP 
+        [.S 
+          [.NP $t$ ]
+          [.VP $t$ ]
+        ]
+        C\\\orth{ye-lebeskew}
+      ] 
+      N\\\orth{libs}
+    ]
+    [.VP 
+      [.AdjP Adj\\\orth{arIf} ]
+      V\\\orth{new}
+    ]
+  ] 
+\end{exe}
+
+In object relative clauses, there is a gap at the object of the relative clause. This can be seen in (\ref{ex:rel:gll_obj}).
+
+\begin{exe}
+  \ex\label{ex:rel:gll_obj} \gll \orth{ye-sera-w-t} \orth{buna} \orth{yet} \orth{new} \\
+  \textsc{rel}-make-\textsc{1s.s-3s.o} coffee where be\textbackslash\textsc{3s} \\
+  \trans `Where is the coffee I made'
+\end{exe}
+
+The structure of this sentence can be seen in (\ref{ex:rel:tree_obj}).
+
+\begin{exe}
+  \ex\label{ex:rel:tree_obj} \Tree [.S 
+    [.NP
+      [.CP 
+        [.S 
+          [.NP N\\$\emptyset$ ]
+          [.VP
+            [.NP N\\$t$ ]
+            V\\$t$
+          ]
+        ]
+        C\\\orth{ye-serawt}
+      ] 
+      N\\\orth{buna}
+    ]
+    [.VP 
+      [.AdvP Adv\\\orth{yet} ]
+      V\\\orth{new}
+    ]
+  ] 
 \end{exe}
 
 \end{document}
