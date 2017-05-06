@@ -16,7 +16,7 @@
 \makesavenoteenv{table}
 
 % define \phon for phonetic examples
-\newcommand{\ipa}[1]{$[$\textipa{#1}$]$}
+\newcommand{\ipa}[1]{$/$\textipa{#1}$/$}
 \newcommand{\phon}[1]{$[$\textipa{#1}$]$}
 \newcommand{\orth}[1]{\textit{\StrSubstitute{#1}{I}{\'{i}}[\x]\StrSubstitute{\x}{E}{\'{e}}[\x]\StrSubstitute{\x}{N}{\~{n}}[\x]\x}}
 
@@ -35,31 +35,32 @@
 
 \section{Phonology}
 
-Amharic has several interesting features, including a three-way contrast for stops between voiced, voiceless, and ejective stops. This distinction also exists for affricates, and the syllable structure of the language allows for quite heavy syllables (at least CVCC). There are seven vowel phonemes, and at least nineteen consonant phonemes.
+Amharic has several interesting phonological features, including a three-way contrast for stops: voiced, voiceless, and ejective. This distinction also exists for affricates, and the syllable structure of the language allows for quite heavy syllables (at least CVCC). There are seven vowel phonemes, and at least nineteen consonant phonemes.
 
 \subsection{Consonant Phonemes}
 
 Table 1 shows the consonant phonemes in Amharic.
 
-\begin{table}[h!]
-	\centering
-	\caption{Consonant Phonemes}
-	\label{tab:consonants_ipa}
-	\begin{tabular}{|l|l|l|l|l|l|l|l|} \hline
-		& Bilabial & Labiodental & Alveolar  & Postalveolar & Palatal & Velar     & Glottal \\ \hline
-		Plosive                                                         & p   b    &             & t   t'  d &              &         & k   k'  g & \textipa{P}       \\ \hline
-		Nasal                                                           & \hspace{2mm} m        &             & \hspace{2mm} n         &              &         &           &         \\ \hline
-		Trill                                                           &          &             & \hspace{2mm} r         &              &         &           &         \\ \hline
-		Fricative                                                       & f        &             & s   z     & \textipa{S}           &         &           & h       \\ \hline
-		Approximant                                                     &          &             &           &              & \hspace{2mm} j       &           &         \\ \hline
-		Lat. approx. &          &             & \hspace{2mm} l         &              &         &           &        \\  \hline
-		
-	\end{tabular}
+\begin{table}[ht!]
+\centering
+\caption{Consonant Phonemes}
+\label{tab:consonants_ipa}
+\begin{tabular}{|l|l|l|l|l|l|l|l|} \hline
+             & Bilabial & Labiodent. & Alveolar  & Postalveolar & Palatal & Velar     & Glottal \\ \hline
+Plosive      & p   b    &             & t   t'  d &              &         & k   k'  g & \textipa{P}       \\ \hline
+Nasal        & \hspace{2mm} m        &             & \hspace{2mm} n         &              &         &           &         \\ \hline
+Trill        &          &             & \hspace{2mm} r         &              &         &           &         \\ \hline
+Fricative    &          & f           & s   z     & \textipa{S}           &         &           & h       \\ \hline
+Approximant  &          &             &           &              & \hspace{2mm} j       &           &         \\ \hline
+Lat. approx. &          &             & \hspace{2mm} l         &              &         &           &        \\  \hline
+	
+\end{tabular}
 Other sounds: w (labio-velar approximant) \\
 Affricates: \textteshlig, \textteshlig', ts', \textdyoghlig
 \end{table}
 
-There is a two-way contrast for labial stops (voiced and voiceless). Both sounds occur word-initially, as can be seen in (1).
+% TODO: talk about p'?
+The plosives in Aharic are \ipa{p b t t' d k k' g P}. There is a two-way contrast for labial stops (voiced and voiceless). Both sounds occur word-initially, as can be seen in (1).
 \begin{exe}
 	\ex \ipa{pAsti} `pastry'
 	\\ \ipa{bAdo} `empty'
@@ -67,117 +68,112 @@ There is a two-way contrast for labial stops (voiced and voiceless). Both sounds
 
 \noindent Alveolar and velar stops have a three-way contrast between voiced, voiceless, and ejective variants. These can be seen in (2) and (3).
 
+\begin{multicols}{2}
 \begin{exe}
-	\ex \ipa{tAko} `high heel'
-	\\ \ipa{t'AbjA} `station'
-	\\ \ipa{dAr} `edge'
+  \ex \ipa{tAko} `high heel'
+  \\ \ipa{t'AbjA} `station'
+  \\ \ipa{dAr} `edge'
+  \ex \ipa{k1brit} `lighter'
+  \\ \ipa{k'odA} `skin'
+  \\ \ipa{gAbjA} `blanket'
 \end{exe}
+\end{multicols}
+
+\noindent The glottal stop was not observed word-initially, but it does occur word-medially. It is not clear whether it is a phoneme in the language; there are no close minimal pairs, and it is often deleted.
 
 \begin{exe}
-	\ex \ipa{k1brit} `lighter'
-	\\ \ipa{k'odA} `skin'
-	\\ \ipa{gAbjA} `blanket'
-\end{exe}
-
-\noindent The glottal stop, was not observed word-initially, but it does occur word-medially. It is not clear whether it is a phoneme in the language; there are no close minimal pairs, and it is often deleted.
-
-\begin{exe}
-	\ex \ipa{gAPAt} `large bite'
+  \ex \ipa{gAPAt} `large bite'
    \\ \ipa{gA:t} `large bite (said quickly'
 \end{exe}
 
 Amharic has at least two nasal consonant phonemes. \ipa{m} and \ipa{n} occur word-initially, as in (5). The palatal nasal only occurs word-medially, and so it may be an allophone of [n]. 
 \begin{exe}
-	\ex \ipa{m1lAs} `tongue'
-	\\ \ipa{n1fAs} `wind'
-	\ex \ipa{AmAri\textltailn A} `Amharic'
+  \ex \ipa{m1lAs} `tongue'
+  \\ \ipa{n1fAs} `wind'
+  \ex \ipa{AmAri\textltailn A} `Amharic'
 \end{exe}
+In the rest of the paper, the palatal nasal is represented with $<$nj$>$.
 
-The trill \ipa{r} has a good minimal pair with \ipa{g}, but there are no word-initial examples in the data.
+There is one trill in the language, \ipa{r}, which has a good minimal pair with \ipa{g} in (\ref{phon:r_g}). We also see a word-initial example in (\ref{phon:r}).
 \begin{exe}
-	\ex \ipa{bEr} `door'
-	\\  \ipa{bEg} `lamb'
+  \ex\label{phon:r_g} \ipa{bEr} `door'
+  \\  \ipa{bEg} `lamb'
+
+  \ex\label{phon:r} \ipa{rE\textdyoghlig im} `tall'
 \end{exe}
 
-There are five fricative phonemes in Amharic. All of these occur word-initially, as seen in (8).
+There are five fricative phonemes in Amharic, \ipa{f s z S h}. All of these occur word-initially, as seen in (8).
 \begin{exe}
-	\ex \ipa{fErEs} `horse'
-	\\ \ipa{sAmbA} `lung'
-	\\ \ipa{z1mb} `fly'
-	\\ \ipa{SukA} `fork'
-	\\ \ipa{hod} `belly'
+  \ex \ipa{fErEs} `horse'
+  \ex \ipa{sAmbA} `lung'
+  \ex \ipa{z1mb} `fly'
+  \ex \ipa{SukA} `fork'
+  \ex \ipa{hod} `belly'
 \end{exe}
 
-There are four affricates in the language, including a voiced, voiceless, and ejective variant of \ipa{\textteshlig}. There were no word-initial examples of the non-ejective \ipa{\textteshlig}, so it may not be a phoneme in the language.
+\noindent Additionally, there are four affricates in the language, including a voiced, voiceless, and ejective variant of \ipa{\textteshlig}. There were no word-initial examples of the non-ejective \ipa{\textteshlig}, so it may not be a phoneme in the language.
 
 \begin{exe}
-	\ex \ipa{\textteshlig'ErEk'A} `moon'
-	\ex \ipa{ts'EhAj} `sun'
-	\ex \ipa{\textdyoghlig oro} `ear'
-	\ex \ipa{Aino\textteshlig u} `eyes'
+  \ex \ipa{\textteshlig'ErEk'A} `moon'
+  \ex \ipa{ts'EhAj} `sun'
+  \ex \ipa{\textdyoghlig oro} `ear'
+  \ex \ipa{Aino\textteshlig u} `eyes'
 \end{exe}
 
-Approzimants in Amharic include \ipa{l}, \ipa{j}, and \ipa{w}.
+Approximants in Amharic include \ipa{l}, \ipa{j}, and \ipa{w}, which all occur word-initially.
 \begin{exe}
-	\ex \ipa{lElit} `night'
-	\\ \ipa{jimAr1} `bless you'
-	\\ \ipa{wEf} `bird'
+  \ex \ipa{lElit} `night'
+  \\ \ipa{jimAr1} `bless you'
+  \\ \ipa{wEf} `bird'
 \end{exe}
+\ipa{w} also occurs as part of the diphthong \ipa{aw}.
 
 \subsection{Vowel Phonemes}
 
 Table 2 shows the vowel phonemes in Amharic.
 
-\begin{table}[h!]
-	\centering
-	\caption{Vowel Phonemes}
-	\label{vowels}
+\begin{table}[ht!]
+\centering
+\caption{Vowel Phonemes}
+\label{vowels}
 \begin{tabular}{|l|l|l|} \hline
-	i     & \textipa{1} & u \\ \hline
-	e   \textipa{E} &   & o \\ \hline
-	&   & \textipa{A} \\ \hline
+  i   & \textipa{1} & u \\ \hline
+  e   \textipa{E} &   & o \\ \hline
+  &   & \textipa{A} \\ \hline
 \end{tabular} \\
-Diphthongs: ej, aj, \textipa{Ew}
+Diphthongs: ej, aj, \textipa{Ew}, \textipa{Aw}
 \end{table}
 
-The front and mid high vowels \ipa{i} and \ipa{1} occur word-initially and word-finally in (15) and (16), but the back vowel \ipa{u} does not occur word-initially (and is shown word-finally in (15). However, the morpheme /-u/ functions like a determiner, so \ipa{u} we have reason to suspect that it is a phoneme.
+The front and mid high vowels \ipa{i} and \ipa{1} occur word-initially and word-finally in (15) and (16), but the back vowel \ipa{u} does not occur word-initially (and is shown word-finally in (15). However, the morpheme /-u/ is a definite marker in the language, so \ipa{u} we have reason to suspect that it is a phoneme.
 
 \begin{exe}
-	\ex \ipa{iju} `look at it'
-	\\ \ipa{pAsti} `pastry'
-\end{exe}
-
-\begin{exe}
-	\ex \ipa{1bet} `house'
-	\\ \ipa{jimAr1} `bless you'
+  \ex \ipa{iju} `look at it'
+  \\ \ipa{pAsti} `pastry'
+  \ex \ipa{1bet} `house'
+  \\ \ipa{jimAr1} `bless you'
 \end{exe}
 
 Mid vowels in Amharic include \ipa{e}, \ipa{E}, and \ipa{o}. All occur word-initially and word-finally, as seen in (17), (18), and (19).
 
 \begin{exe}
-	\ex \ipa{eli} `turtle'
-	\\ \ipa{Ajne} `my eye'
-\end{exe}
-
-\begin{exe}
-	\ex \ipa{ErE} `really?'
-\end{exe}
-
-\begin{exe}
-	\ex \ipa{oromi\textltailn a} `language of Oromo people'
-	\\ \ipa{doro} `chicken'
+  \ex \ipa{eli} `turtle'
+  \\ \ipa{Ajne} `my eye'
+  \ex \ipa{ErE} `really?'
+  \ex \ipa{oromi\textltailn a} `language of Oromo people'
+  \\ \ipa{doro} `chicken'
 \end{exe}
 
 The only low vowel is \ipa{A}, which occurs word-initially and word-finally.
 \begin{exe}
-	\ex \ipa{AsA} `fish'
+  \ex \ipa{AsA} `fish'
 \end{exe}
 
-Amharic has three diphthongs. \ipa{ej} only occurs once in the data set, so it may not be a separate phoneme. \ipa{Ew} does not occur word-initially, so it may not be In some cases, these may be better analyzed as a verb and a consonant.
+Amharic has four diphthongs, \ipa{aj ej Ew Aw}. \ipa{Ew} does not occur word-initially, so it may not be a phoneme. In some cases, these may be better analyzed as a vowel and a consonant.
 \begin{exe}
-	\ex \ipa{ajt} `mouse'
-	\\ \ipa{k'ej} `red'
-	\\ \ipa{jEsA\textteshlig Ew} `their (formal) hand'
+  \ex \ipa{ajt} `mouse'
+  \ex \ipa{k'ej} `red'
+  \ex \ipa{jEsA\textteshlig Ew} `their (formal)'
+  \ex \ipa{bElAw} `I ate'
 \end{exe}
 
 \subsection{Syllables}
@@ -185,14 +181,14 @@ Amharic has three diphthongs. \ipa{ej} only occurs once in the data set, so it m
 There are several different syllable types in Amharic.
 
 \begin{exe}
-	\ex (V) \ipa{eli} `turtle'
-	\ex (CV) \ipa{m1lAs} `tongue'
-	\ex (CVC) \ipa{wEf} `bird'
-	\ex (CVCC) \ipa{wErk'} `gold'
-	\ex (CCV) \ipa{Ar1NgwAde} `green'
+  \ex (V) \ipa{eli} `turtle'
+  \ex (CV) \ipa{m1lAs} `tongue'
+  \ex (CVC) \ipa{wEf} `bird'
+  \ex (CVCC) \ipa{wErk'} `gold'
+  \ex (CCV) \ipa{Ar1NgwAde} `green'
 \end{exe}
 
-In general, we see CCV syllables only with glides as the second syllable. As in (25), (CVCC) syllables are also possible. So, we may propose a general template for syllable structure that looks like (C)(G)V(C)(C), where G is a glide. However, we see no CGVCC syllables, so there may be a limit to how many consonants are in a syllable.
+In general, we see CCV syllables only with glides as the second consonant. As in (25), (CVCC) syllables are also possible. So, we may propose a general template for syllable structure that looks like (C)(G)V(C)(C), where G is a glide. However, we see no CGVCC syllables, so there may be a limit to how many consonants are in a syllable.
 
 \subsection{Orthography}
 The following orthography was created for easier transcription of Amharic and is used in the rest of the paper.
@@ -212,14 +208,14 @@ The following orthography was created for easier transcription of Amharic and is
 
 \begin{table}[ht]
 \centering
-\caption{Consonant Phonemes}
+\caption{Consonants}
 \label{tab:consonants_orthography}
 \begin{tabular}{llllllll}
  Bilabial & Labiodental & Alveolar  & Postalveolar & Palatal & Velar     & Glottal \\ \hline
  p   b    &             & t   t'  d &              &         & k   k'  g & '\phon{P}       \\
  m        &             & n         &              &         &           &         \\ 
           &             & r         &              &         &           &         \\ 
- f        &             & s   z     & sh\phon{\textipa{S}}  &         &           & h       \\
+          & f           & s   z     & sh\phon{\textipa{S}}  &         &           & h       \\
           &             &           &              & y\phon{j}&           &         \\
           &             & l         &              &         &           &        \\ 
         
@@ -465,7 +461,7 @@ Verbs are broken up into two different groups based on their root structure. Gro
 \subsection{Command affixes}
 The different command forms are encoded through affixes which are attached to the verb root.
 
-\begin{table}[h]
+\begin{table}[ht!]
 \centering
 \caption{Command affixes}
 \label{tab:commands-affixes}
@@ -695,7 +691,7 @@ In the past tense, there are different affixes depending on whether the verb roo
 
 For both types of verbs, the past negative is formed with the \orth{al-} prefix and the \orth{-im} suffix. All V-final forms preserve the final root vowel with the exception of the third-person plural form \orth{seru}. In this form, the final vowel is dropped and replaced with the \orth{-u} suffix; otherwise, it would be indistinguishable from the \textsc{3sm} form. These two paradigms are summarized in table \ref{tab:past:subject-affixes}.
 
-\begin{table}[h!t]
+\begin{table}[ht!]
 \centering
 \caption{Past subject affixes}
 \label{tab:past:subject-affixes}
@@ -975,7 +971,7 @@ There are several examples of verbal prefixes that function as complementizers. 
 
 In some examples, these prefixes are accompanied by a variation of \orth{-mi-} and even a verbal suffix in the \textsc{1sf}, \textsc{2p}, and \textsc{3p} forms. It is unclear when these are used, as they occur in forms like (\ref{ex:comp:inde1}) but not in forms like (\ref{ex:comp:inde2}). This paradigm is shown in Table \ref{tab:comp:forms}.
 
-\begin{table}[h!t]
+\begin{table}[ht!]
 \centering
 \caption{Complementizer forms}
 \label{tab:comp:forms}
