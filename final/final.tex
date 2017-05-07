@@ -432,7 +432,7 @@ There are eight different command forms in Amharic. In the second person, there 
 To analyze these command forms, it is important to recognize the verb root. Each infinitive form starts with the prefix /me-/. In some of these forms, the /e/ is dropped when the root begins with a vowel.\footnote{In these glosses, \textsc{INF} represents the infinitive, \textsc{2M.IMP} represents the second person masculine imperative, etc.}
 
 \begin{exe}
-  \ex \gll me-ambib $>$ \phon{mambib} \\
+  \ex \gll me-ambib $>$ m-ambib \\
       INF-read \\
       \trans `to read'
 \end{exe}
@@ -459,26 +459,7 @@ Verbs are broken up into two different groups based on their root structure. Gro
 \end{table}
 
 \subsection{Command affixes}
-The different command forms are encoded through affixes which are attached to the verb root.
-
-\begin{table}[ht!]
-\centering
-\caption{Command affixes}
-\label{tab:commands-affixes}
-\begin{tabular}{l|l}
-  form & affix\\ \hline
-  F  & \orth{-I} \\
-  M  & \orth{-$\emptyset$}\\
-  P  & \orth{-u}\\
-  H  & \orth{in- -a}\\
-  NF & \orth{at- -I}\\
-  NM & \orth{at- -$\emptyset$}\\ 
-  NP & \orth{at- -u}\\
-  NH & \orth{an- -a}\\
-\end{tabular}
-\end{table}
-
-In the case of group 1 verbs, the final vowel is dropped when there is a suffix (as in (\ref{ex:group2-f})). However, the final vowel of group 2 verbs is preserved in the masculine forms, where there is no additional suffix. This can be seen in (\ref{ex:group2-m}).
+The different command forms are encoded through affixes which are attached to the verb root. In the case of vowel-final verbs, the final vowel is dropped when there is a suffix (as in (\ref{ex:group2-f})). In consonant-final verb roots, there is no suffix in the masculine imperative form, and the verb form consists of only the verb root. This can be seen in (\ref{ex:group1-m}).
 
 \begin{multicols}{2}
 \begin{exe}
@@ -491,20 +472,53 @@ In the case of group 1 verbs, the final vowel is dropped when there is a suffix 
     \gll \orth{tEN-I} \\
     sleep-2F.IMP \\
     \trans `sleep! (to a woman)'
+
+  \ex\label{ex:group2-p}
+    \gll \orth{tEN-u} \\
+    sleep-2P.IMP \\
+    \trans `sleep! (pl)'
+
+  \ex\label{ex:group2-h}
+    \gll \orth{inni-tENa} \\
+    sleep-2H.IMP \\
+    \trans `let's sleep!'
+
+  \ex\label{ex:group1-m} \gll 
+    \orth{ambib-$\emptyset$} \\
+    read-2M.IMP \\
+    \trans `read! (to a man)'
+
+  \ex\label{ex:group1-f} \gll 
+    \orth{ambib-I} \\
+    read-2F.IMP \\
+    \trans `read! (to a woman)'
+
+  \ex\label{ex:group1-p} \gll 
+    \orth{ambib-u} \\
+    read-2P.IMP \\
+    \trans `read! (pl)'
+
+  \ex\label{ex:group1-h} \gll 
+    \orth{in-ambib} \\
+    read-2H.IMP \\
+    \trans `let's read'
 \end{exe}
 \end{multicols}
 
-\begin{multicols}{2}
-\begin{exe}
-  \ex \gll \orth{ambib-$\emptyset$} \\
-      read-2M.IMP \\
-      \trans `read! (to a man)'
+\noindent These forms are summarized in table \ref{tab:commands-affixes}.
 
-  \ex \gll \orth{ambib-I} \\
-      read-2F.IMP \\
-      \trans `read! (to a woman)'
-\end{exe}
-\end{multicols}
+\begin{table}[ht!]
+\centering
+\caption{Command affixes}
+\label{tab:commands-affixes}
+\begin{tabular}{l|l}
+  form & affix\\ \hline
+  F  & \orth{-I} \\
+  M  & \orth{-$\emptyset$}\\
+  P  & \orth{-u}\\
+  H  & \orth{in- -a}\\
+\end{tabular}
+\end{table}
 
 In addition to the affixes, the root vowel changes for some verbs in the imperative form. Examples of this in table \ref{tab:commands-data} include \textit{\orth{merot'}} and \textit{\orth{mehEd}}, which are shown in (\ref{ex:stem-merot}) and (\ref{ex:stem-mehed}).
 
@@ -522,7 +536,7 @@ In addition to the affixes, the root vowel changes for some verbs in the imperat
     \item \orth{a $\rightarrow$ a} (no change)
   \end{enumerate}
 \end{exe}
-In the case of \orth{E} and \orth{o}, these vowels are being raised, but we do not see a similar process with \orth{a}.
+In the case of /\orth{E}/ and /\orth{o}/, these vowels are being raised, but we do not see a similar process with /\orth{a}/.
 
 In the feminine forms of many commands, the consonant before the /-\orth{I}/ suffix becomes palatalized. This can be seen in \ref{ex:palatalized1} and \ref{ex:palatalized2}, and appears to only occur with /t/ and /d/.
 \begin{multicols}{2}
@@ -533,7 +547,7 @@ In the feminine forms of many commands, the consonant before the /-\orth{I}/ suf
     \trans `drink! (to a female)'
 
   \ex\label{ex:palatalized2}
-  \gll \orth{jIj-I} \\
+  \gll \orth{hIj-I} \\
     go-2F.IMP \\
     \trans `go! (to a female)'
 \end{exe}
@@ -544,6 +558,43 @@ In the feminine forms of many commands, the consonant before the /-\orth{I}/ suf
 \begin{exe}
   \ex voiceless stop $\rightarrow$ palatalized $/$ \_ \orth{I}
 \end{exe}
+
+\subsection{Negative commands}
+
+\begin{exe}
+  \ex\label{ex:neg-group1-m} \gll 
+    \orth{at-ambib-$\emptyset$} \\
+    read-2M.IMP \\
+    \trans `don't read! (to a man)'
+
+  \ex\label{ex:neg-group1-f} \gll 
+    \orth{at-ambib-I} \\
+    read-2F.IMP \\
+    \trans `don't read! (to a woman)'
+
+  \ex\label{ex:neg-group1-p} \gll 
+    \orth{indat-ambib-u} \\
+    read-2P.IMP \\
+    \trans `don't read! (pl)'
+
+  \ex\label{ex:neg-group1-h} \gll 
+    \orth{ind-an-ambib} \\
+    read-2H.IMP \\
+    \trans `let's not read'
+\end{exe}
+
+\begin{table}[ht!]
+\centering
+\caption{Command affixes}
+\label{tab:commands-neg-affixes}
+\begin{tabular}{l|l}
+  form & affix\\ \hline
+  NF & \orth{at- -I}\\
+  NM & \orth{at- -$\emptyset$}\\ 
+  NP & \orth{at- -u}\\
+  NH & \orth{an- -a}\\
+\end{tabular}
+\end{table}
 
 \newpage
 \section{Copular sentences}
