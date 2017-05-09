@@ -50,14 +50,14 @@ Table 1 shows the consonant phonemes in Amharic.
 \centering
 \caption{Consonant Phonemes}
 \label{tab:consonants_ipa}
-\begin{tabular}{|l|l|l|l|l|l|l|l|} \hline
+\begin{tabular}{l|lllllll} \hline
              & Bilabial & Labiodent. & Alveolar  & Postalveolar & Palatal & Velar     & Glottal \\ \hline
-Plosive      & p   b    &             & t   t'  d &              &         & k   k'  g & \textipa{P}       \\ \hline
-Nasal        & \hspace{2mm} m        &             & \hspace{2mm} n         &              &         &           &         \\ \hline
-Trill        &          &             & \hspace{2mm} r         &              &         &           &         \\ \hline
-Fricative    &          & f           & s   z     & \textipa{S}           &         &           & h       \\ \hline
-Approximant  &          &             &           &              & \hspace{2mm} j       &           &         \\ \hline
-Lat. approx. &          &             & \hspace{2mm} l         &              &         &           &        \\  \hline
+Plosive      & p b p'    &             & t   d  t' &              &         & k g k' & \textipa{P}       \\
+Nasal        & \hspace{2mm} m        &             & \hspace{2mm} n         &              &         &           &         \\
+Trill        &          &             & \hspace{2mm} r         &              &         &           &         \\
+Fricative    &          & f           & s   z     & \textipa{S}           &         &           & h       \\
+Approximant  &          &             &           &              & \hspace{2mm} j       &           &         \\
+Lat. approx. &          &             & \hspace{2mm} l         &              &         &           &        \\ 
 	
 \end{tabular}
 Other sounds: w (labio-velar approximant) \\
@@ -215,7 +215,7 @@ The following orthography was created for easier transcription of Amharic and is
 \centering
 \caption{Consonants}
 \label{tab:consonants_orthography}
-\begin{tabular}{llllllll}
+\begin{tabular}{llllllll} \hline
  Bilabial & Labiodental & Alveolar  & Postalveolar & Palatal & Velar     & Glottal \\ \hline
  p   b    &             & t   t'  d &              &         & k   k'  g & '\phon{P}       \\
  m        &             & n         &              &         &           &         \\ 
@@ -241,21 +241,21 @@ What types of pronouns are there and what names will you give them? So far I see
 Grading rubric: Did you describe all the patterns in the data in a logical, well-ordered way? Do you rise above details to give a good feel for how the language works? Did you include enough data to document the language? Is your data accurate? Are you using normal format and terms for describing a language? Do you define your terms? Is your writing carefully edited?
 \fi
 
-Subject pronouns have the following forms in Amharic:
+There are eight different subject pronouns in Amharic. There are forms for first person, second person, and third person singular and plural as well as a gender distinction in the second and third person. These pronouns are listed in table \ref{tab:pronouns}.
 
 \begin{table}[ht]
 \centering
 \caption{Subject pronouns}
 \label{tab:pronouns}
-  \begin{tabular}{ll}
-    \orth{inE} & I \\
-    \orth{ante} & you (m) \\
-    \orth{anchI} & you (f) \\
-    \orth{isu} & he \\
-    \orth{iswa} & she \\
-    \orth{inya} & we \\
-    \orth{inante} & you (pl) \\
-    \orth{inesu} & they \\
+  \begin{tabular}{lll}
+    \textsc{1s} & \orth{inE} & I \\
+    \textsc{2m} & \orth{ante} & you (m) \\
+    \textsc{2f} & \orth{anchI} & you (f) \\
+    \textsc{3m} & \orth{isu} & he \\
+    \textsc{3f} & \orth{iswa} & she \\
+    \textsc{1p} & \orth{inya} & we \\
+    \textsc{2p} & \orth{inante} & you (pl) \\
+    \textsc{3p} & \orth{inesu} & they \\
   \end{tabular}
 \end{table}
 
@@ -342,7 +342,7 @@ In this pattern, the person and number of the possessor is shown by a suffix on 
 
 \begin{exe}
   \ex \orth{doro-E} `my chicken'\\
-      \orth{doro-ih} `your (m) chicken'\\
+      \orth{doro-i} `your (m) chicken'\\
       \orth{doro-ish} `your (f) chicken'\\
       \orth{doro-u} `his chicken'\\
       \orth{doro-wa} `her chicken'
@@ -362,7 +362,7 @@ All plural suffixes begin with \orth{ach-}. These suffixes may be further analyz
 
 \subsection{Contrast forms}
 
-Additionally, Amharic has several contrast forms for possession. These forms place the stress on the possessor and convey a meaning like `MY hand.' Each of these can also be expressed with a suffix form as in the previous section.
+Additionally, Amharic has several contrast forms for possession. These forms place the emphasis on the possessor and convey a meaning like `MY hand.' Each of these can also be expressed with a suffix form (without emphasis) as in the previous section. These are formed using the prefix \orth{ye-} before a pronoun (as listed in table \ref{tab:pronouns}).
 
 \begin{table}[ht]
 \centering
@@ -376,7 +376,7 @@ Additionally, Amharic has several contrast forms for possession. These forms pla
     \orth{ye-swa ij}     & `her hand'            & \orth{ij-wa} & `her hand'\\
     \orth{ye-nya ij-och} & `our hands'           & \orth{ij-och-achin} & `our hands'\\
     ?\orth{ye-nante ij-och}\footnote{This form was never elicited, but we did see \orth{yenante mets'af} `your (pl) book'.} & `your (pl) hands' & \orth{ij-och-achun} & `your (pl) hands'  \\ 
-    \orth{yenesu ij-och} & `their hands' & \orth{ij-och-achew} & `their hands' \\
+    \orth{ye-nesu ij-och} & `their hands' & \orth{ij-och-achew} & `their hands' \\
  \end{tabular}
 \end{table}
 
