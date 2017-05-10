@@ -1102,7 +1102,13 @@ The structure of these sentences is shown in (\ref{ex:inf:tree}). The verb \orth
 \subsection{Relative clauses}
 %TODO: fix all of this dumpster fire
 
-Relative clauses in Amharic use the relativizer \orth{ye-} and function like other CPs in the language. Since Amharic is a head-final language, relative clauses occur before the nouns they modify. In subject relative clauses, the verb in the relative clause agrees with the noun that the clause modifies as the subject and the object within the clause as the object. This can be seen in (\ref{ex:rel:gll_subj}).
+Relative clauses in Amharic are CPs that modify a head noun. They use the relativizer \orth{ye-}, which occurs as a verbal prefix. Since Amharic is a head-final language, relative clauses occur before the nouns they modify. 
+
+\subsubsection{Relativized subject}
+
+\subsubsection{Relativized object}
+
+When the relativized noun phrase is a direct object, we see a gap in the object position of the relative clause. However, the verb still agrees with the person and number of the object, which is \orth{libs} `clothes' in (\ref{ex:rel:gll_subj}).
 
 \begin{exe}
   \ex\label{ex:rel:gll_subj} \gll \orth{ye-lebes-ke-w} \orth{libs} \orth{arIf} \orth{new} \\
@@ -1110,17 +1116,19 @@ Relative clauses in Amharic use the relativizer \orth{ye-} and function like oth
   \trans `The clothing that you wear is nice.'
 \end{exe}
 
-The structure of this sentence can be seen in (\ref{ex:rel:tree_subj}). There is a gap at the subject of the embedded CP, and the verb moves up to the complementizer.
+\noindent In (\ref{ex:rel:gll_subj}), the verb \orth{-lebes-} agrees with the second person masculine subject and the third person singular object \orth{libs} `clothes'.
+
+The structure of this sentence can be seen in (\ref{ex:rel:tree_subj}). There is a gap at the object of the embedded CP, and the verb moves up to the complementizer.
 
 \begin{exe}
   \ex\label{ex:rel:tree_subj} \Tree [.S 
     [.NP
       [.CP 
         [.S 
-          [.NP $t$ ]
-          [.VP $t$ ]
+          [.NP $\emptyset$ ]
+          [.VP [.NP N\\(gap) ] \node{vi}V\\\orth{lebeskew} ]
         ]
-        C\\\orth{ye-lebeskew}
+        \node{vf}C\\\orth{ye-}
       ] 
       N\\\orth{libs}
     ]
@@ -1129,9 +1137,10 @@ The structure of this sentence can be seen in (\ref{ex:rel:tree_subj}). There is
       V\\\orth{new}
     ]
   ] 
+  \anodecurve[br]{vi}[br]{vf}{0.4in}
 \end{exe}
 
-In object relative clauses, the relativized noun is the direct object. The verb in the relative clause agrees with the noun it modifies as the object and the subject of the relative clause as the subject. This can be seen in (\ref{ex:rel:gll_obj}).
+We can see another example of this in (\ref{ex:rel:gll_obj}).
 
 \begin{exe}
   \ex\label{ex:rel:gll_obj} \gll \orth{ye-sera-w-t} \orth{buna} \orth{yet} \orth{new} \\
@@ -1148,11 +1157,11 @@ The structure of this sentence can be seen in (\ref{ex:rel:tree_obj}). There is 
         [.S 
           [.NP N\\$\emptyset$ ]
           [.VP
-            [.NP N\\$t$ ]
-            V\\$t$
+            [.NP N\\(gap) ]
+            \node{vi}V\\serawt
           ]
         ]
-        C\\\orth{ye-serawt}
+        \node{vf}C\\\orth{ye-}
       ] 
       N\\\orth{buna}
     ]
@@ -1161,6 +1170,7 @@ The structure of this sentence can be seen in (\ref{ex:rel:tree_obj}). There is 
       V\\\orth{new}
     ]
   ] 
+  \anodecurve[br]{vi}[br]{vf}{0.4in}
 \end{exe}
 
 \newpage
