@@ -22,14 +22,17 @@
 
 % margins and spacing
 \usepackage[letterpaper, margin=1in]{geometry}
+
+\title{Language Sketch: Amharic}
+\date{May 10, 2017}
+\author{Will Theuer}
 % =================================================================================================
 
 \begin{document}
-\begin{center}
-{\Large Amharic} \\
-{\large Will Theuer}
-\end{center}
+\vspace{5cm}
+\maketitle
 
+\newpage
 \tableofcontents
 
 \section{Overview}
@@ -416,7 +419,7 @@ Possessive forms like `Rachel's hand' are constructed similarly. As shown in (\r
 \section{Reflexives}
 \setcounter{exx}{0}
 
-Reflexives are formed with the noun \orth{iras}, which may be derived from \orth{ras} `head.' \orth{iras} is the object of the sentence and takes a possessive suffix and a \orth{-n/-ny} object agreement suffix. In (\ref{ex:reflexive:wash}), we see the paradigm for the verb \orth{metat'eb} `to wash.'
+Reflexives are formed with the noun \orth{iras}, which may be derived from \orth{ras} `head.' \orth{iras} is the object of the sentence and takes a possessive suffix and a \orth{-n/-ny} object agreement suffix. In (\ref{ex:reflexive:wash}), we see the paradigm for the past tense of the verb \orth{metat'eb} `to wash.'
 
 \begin{exe}
   \ex\label{ex:reflexive:wash} \orth{metat'eb} `to wash' \\
@@ -432,19 +435,56 @@ Reflexives are formed with the noun \orth{iras}, which may be derived from \orth
   \end{tabular}
 \end{exe}
 
-Each of these forms of \orth{iras} has an added \orth{-n/-ny/-in} object suffix unless the possessive suffix already ends in \orth{n}\footnote{This is probably an object suffix that occurs throughout the language. This requires some more data to prove.}. The \orth{-ny} form occurs after the tense \orth{-E} suffix in the \textsc{1s} form, and the \orth{-in} form occurs after \orth{-ish}. This may be a result of the cluster \orth{*ishn} not being allowed in the language. (\ref{ex:reflexive:wash:gll1}) and (\ref{ex:reflexive:wash:gll2}) show the glosses of two of the forms.
+Each of these forms of \orth{iras} has an added \orth{-n/-ny/-in} object suffix unless the possessive suffix already ends in \orth{n}\footnote{This is probably the accusative definite suffix that occurs throughout the language, but it would require some more data to prove.}. The \orth{-ny} form occurs after the tense \orth{-E} suffix in the \textsc{1s} form, and the \orth{-in} form occurs after \orth{-ish}. This may be a result of the cluster \orth{*ishn} not being allowed in the language. (\ref{ex:reflexive:wash:gll1}) and (\ref{ex:reflexive:wash:gll2}) show the glosses of two of the forms.
 
 \begin{exe}
   \ex\label{ex:reflexive:wash:gll1} \gll \orth{iras-E-ny} \orth{tat'eb-kuwin} \\
-  \textsc{refl}-\textsc{1s.poss}-\textsc{obj} wash-\textsc{1s} \\
+  \textsc{refl}-\textsc{1s.poss}-\textsc{acc} wash-\textsc{1s} \\
   \trans `I washed myself'
 
   \ex\label{ex:reflexive:wash:gll2} \gll \orth{iras-i-n} \orth{tat'eb-k} \\
-  \textsc{refl}-\textsc{2m.poss}-\textsc{obj} wash-\textsc{2m} \\
+  \textsc{refl}-\textsc{2m.poss}-\textsc{acc} wash-\textsc{2m} \\
   \trans `You (m) washed yourself'
 \end{exe}
 
-The verb form is conjugated as we expect from section 8.1 on subject person marking. It agrees with the subject of the sentence, which either occurs before the object or only as a verbal suffix (as seen here). However, we don't see any object person agreement.
+Reciprocals have a very similar paradigm. They use a different verbal suffix, \orth{te-} and a different verb root (above, \orth{tat'eb}, and here, \orth{tat'ib}). 
+
+\begin{exe}
+  \ex \orth{iras-achin te-tat'ib-en} `We washed each other'
+  \ex \orth{iras-achun te-tat'ib-achu} `You (pl) washed each other'
+  \ex \orth{iras-achew-n te-tat'ib-u} `They washed each other'
+\end{exe}
+
+The verb form for reflexives and reciprocals is as we expect from section 8.1 on subject person marking. It agrees with the subject of the sentence, which either occurs before the object or only as a verbal suffix (as seen here). However, we don't see any object agreement.
+
+In the present tense, we see the following paradigm in (\ref{ex:reflexive:wash-pres}):
+\begin{exe}
+  \ex\label{ex:reflexive:wash-pres} \orth{metat'eb} `to wash' \\
+  \begin{tabular}{lll}
+    \orth{iras-E-ny} & \orth{i-tat'ib-ale-w} & `I wash myself' \\
+    \orth{iras-i-n} & \orth{ti-tat'ib-ale-h} & `You (m) wash yourself'\\
+    \orth{iras-ish-in} & \orth{ti-tat'ib-yal-ish} & `You (f) wash yourself'\\
+    \orth{iras-u-n} & \orth{ti-tat'ib-e}\footnote{Based on the present tense verb paradigm in Section \ref{verbs}, we would expect \orth{yI-tat'ib-ale}. This may need to be re-elicited from the speaker.} & `He washes himself'\\
+    \orth{iras-wa-n} & \orth{ti-tat'ib-ale-ch} & `She washes herself'\\
+    \orth{iras-achin} & \orth{ini-tat'ib-ale-n} & `We wash ourselves'\\
+    \orth{iras-achun} & \orth{ti-tat'ib-ala-chu} & `You all wash yourselves'\\
+    \orth{iras-achew-n} & \orth{yI-tat'ib-al-u} & `They wash themselves'
+  \end{tabular}
+\end{exe}
+
+Two of these are glossed in (\ref{ex:reciprocal1}) and (\ref{ex:reciprocal2}).
+
+\begin{exe}
+  \ex\label{ex:reciprocal1} \gll \orth{iras-E-ny} \orth{i-tat'ib-ale-w} \\
+  \textsc{refl-1s.poss-acc} \textsc{g1}-wash-\textsc{pres-1s} \\
+  \trans `I wash myself'
+
+  \ex\label{ex:reciprocal2} \gll \orth{iras-i-n} \orth{ti-tat'ib-ale-h} \\
+  \textsc{refl-2m.poss-acc} \textsc{g2}-wash-\textsc{pres-2m} \\
+  \trans `I wash myself'
+\end{exe}
+
+As in the past tense, a form of \orth{iras-} is followed by a verb in the present tense. This verb agrees with the person and number of the subject as we would expect according to the present tense verb paradigm in Section \ref{verbs}.
 
 
 \newpage
