@@ -34,13 +34,14 @@
 \section{Overview}
 \setcounter{exx}{0}
 
+%TODO: this
 Overview of the language (basic word order in S, NP, PP, AP, case marking, pro-drop). Pro-drop = can drop the subject
 
 \newpage
 \section{Phonology}
 \setcounter{exx}{0}
 
-Amharic has several interesting phonological features, including a three-way contrast for stops: voiced, voiceless, and ejective. This distinction also exists for affricates, and the syllable structure of the language allows for quite heavy syllables (at least CVCC). There are seven vowel phonemes, and at least nineteen consonant phonemes.
+Amharic has several interesting phonological features, including a three-way contrast for stops: voiced, voiceless, and ejective. This distinction also exists for affricates, and the syllable structure of the language allows for quite heavy syllables (at least CVCC).
 
 \subsection{Consonant Phonemes}
 
@@ -53,7 +54,7 @@ Table 1 shows the consonant phonemes in Amharic.
 \begin{tabular}{l|lllllll} \hline
              & Bilabial & Labiodent. & Alveolar  & Postalveolar & Palatal & Velar     & Glottal \\ \hline
 Plosive      & p b p'    &             & t   d  t' &              &         & k g k' & \textipa{P}       \\
-Nasal        & \hspace{2mm} m        &             & \hspace{2mm} n         &              &         &           &         \\
+Nasal        & \hspace{2mm} m &       & \hspace{2mm} n &  & \hspace{2mm}\textltailn  &           &         \\
 Trill        &          &             & \hspace{2mm} r         &              &         &           &         \\
 Fricative    &          & f           & s   z     & \textipa{S}           &         &           & h       \\
 Approximant  &          &             &           &              & \hspace{2mm} j       &           &         \\
@@ -64,15 +65,14 @@ Other sounds: w (labio-velar approximant) \\
 Affricates: \textteshlig, \textteshlig', ts', \textdyoghlig
 \end{table}
 
-% TODO: talk about p'?
-% TODO: palatal nasal
-The plosives in Aharic are \ipa{p b t t' d k k' g P}. There is a two-way contrast for labial stops (voiced and voiceless). Both sounds occur word-initially, as can be seen in (1).
+The plosives in Aharic are \ipa{p p' b t t' d k k' g P}. There is a three-way contrast for labial stops (voiced, voiceless, and ejective). All sounds occur word-initially, as can be seen in (1).
 \begin{exe}
 	\ex \ipa{pAsti} `pastry'
 	\\ \ipa{bAdo} `empty'
+        \\ \ipa{p'ap'as} `pope'
 \end{exe}
 
-\noindent Alveolar and velar stops have a three-way contrast between voiced, voiceless, and ejective variants. These can be seen in (2) and (3).
+\noindent The ejective \ipa{p'} is rare in Amharic, but the alveolar and velar ejectives \ipa{t' k'} are quite common. Alveolar and velar stops have a three-way contrast between voiced, voiceless, and ejective variants. These can be seen in (2) and (3).
 
 \begin{multicols}{2}
 \begin{exe}
@@ -92,7 +92,7 @@ The plosives in Aharic are \ipa{p b t t' d k k' g P}. There is a two-way contras
    \\ \ipa{gA:t} `large bite (said quickly'
 \end{exe}
 
-Amharic has at least two nasal consonant phonemes. \ipa{m} and \ipa{n} occur word-initially, as in (5). The palatal nasal only occurs word-medially, and so it may be an allophone of [n]. 
+Amharic has at least two nasal consonant phonemes. \ipa{m} and \ipa{n} occur word-initially, as in (5). The palatal nasal only occurs word-medially and word-finally. 
 \begin{exe}
   \ex \ipa{m1lAs} `tongue'
   \\ \ipa{n1fAs} `wind'
@@ -981,15 +981,16 @@ Causatives are marked with the verbal prefix \orth{as-}. In the causative form, 
 \section{Dependent clauses}
 \setcounter{exx}{0}
 
-TODO: Add an intro here.
+% TODO: Add an intro here.
 
 \subsection{Complement clauses}
+% TODO: fix these trees, don't use $t$ as leaf node
 
 There are several types of complement clauses in Amharic.
 
 \subsubsection{Null complementizer}
 
-In some cases, complement clauses are formed without an explicit complementizer. This can be seen in (\ref{ex:comp:null1}) and (\ref{ex:comp:null2}).
+For direct quotations, complement clauses are formed without an explicit complementizer. This can be seen in (\ref{ex:comp:null1}) and (\ref{ex:comp:null2}).
 \begin{exe}
   \ex\label{ex:comp:null1} \gll \orth{i-met'-ale-w} \orth{belo-$\emptyset$-ny-al} \\
   \textsc{g1.pres}-come-\textsc{pres-1s} said-\textsc{3m.subj}-\textsc{1s.obj}-al \\
@@ -1028,7 +1029,7 @@ There are several examples of verbal prefixes that function as complementizers. 
   \trans `I asked if she was pretty'
 \end{exe}
 
-In some examples, these prefixes are accompanied by a variation of \orth{-mi-} and even a verbal suffix in the \textsc{1sf}, \textsc{2p}, and \textsc{3p} forms. It is unclear when these are used, as they occur in forms like (\ref{ex:comp:inde1}) but not in forms like (\ref{ex:comp:inde2}). This paradigm is shown in Table \ref{tab:comp:forms}.
+In some examples, these prefixes are accompanied by a variation of \orth{-mi-} and even a verbal suffix in the \textsc{2f}, \textsc{2p}, and \textsc{3p} forms. It is unclear when these are used, as they occur in forms like (\ref{ex:comp:inde1}) but not in forms like (\ref{ex:comp:inde2}). This paradigm is shown in Table \ref{tab:comp:forms}.
 
 \begin{table}[ht!]
 \centering
@@ -1078,13 +1079,14 @@ The structure of these sentences is shown in (\ref{ex:inf:tree}). The verb \orth
 \end{exe}
 
 \subsection{Relative clauses}
+%TODO: fix all of this dumpster fire
 
 Relative clauses in Amharic use the relativizer \orth{ye-} and function like other CPs in the language. Since Amharic is a head-final language, relative clauses occur before the nouns they modify. In subject relative clauses, the verb in the relative clause agrees with the noun that the clause modifies as the subject and the object within the clause as the object. This can be seen in (\ref{ex:rel:gll_subj}).
 
 \begin{exe}
   \ex\label{ex:rel:gll_subj} \gll \orth{ye-lebes-ke-w} \orth{libs} \orth{arIf} \orth{new} \\
   \textsc{rel}-wear-\textsc{2m.s-3s.o} clothes nice be\textbackslash\textsc{3s} \\
-  \trans `What you are wearing is nice'
+  \trans `The clothing that you wear is nice.'
 \end{exe}
 
 The structure of this sentence can be seen in (\ref{ex:rel:tree_subj}). There is a gap at the subject of the embedded CP, and the verb moves up to the complementizer.
